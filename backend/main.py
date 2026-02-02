@@ -42,7 +42,7 @@ async def serve_frontend():
     html_path = BASE_DIR / "static" / "index.html"
     return FileResponse(html_path)
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health_check():
     return {"status": "healthy", "message": "SnapLogic Converter API is running"}
 
