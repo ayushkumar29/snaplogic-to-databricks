@@ -222,6 +222,54 @@ print("Ready to convert!")</code></pre>
         </div>
     </div>
 
+    <!-- Credentials Modal -->
+    <div class="modal" id="credentialsModal">
+        <div class="modal-backdrop" onclick="closeCredentialsModal()"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>🔐 Credentials Required</h2>
+                <button class="btn btn-ghost" onclick="closeCredentialsModal()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">The following credentials and accounts were detected in your pipeline. Please provide the Databricks equivalents:</p>
+                
+                <div class="cred-section" id="accountsSection" style="display:none;">
+                    <h4>📋 Accounts</h4>
+                    <div id="accountsList" class="cred-list"></div>
+                </div>
+                
+                <div class="cred-section" id="connectionsSection" style="display:none;">
+                    <h4>🔗 Database Connections</h4>
+                    <div id="connectionsList" class="cred-list"></div>
+                </div>
+                
+                <div class="cred-section" id="credentialsSection" style="display:none;">
+                    <h4>🔑 Credentials (Recommended: Use Databricks Secrets)</h4>
+                    <div id="credentialsList" class="cred-list"></div>
+                </div>
+                
+                <div class="cred-section" id="pathsSection" style="display:none;">
+                    <h4>📁 File Paths (Update for DBFS/Unity Catalog)</h4>
+                    <div id="pathsList" class="cred-list"></div>
+                </div>
+                
+                <div class="cred-section" id="customSnapsSection" style="display:none;">
+                    <h4>⚠️ Custom Enterprise Snaps (Require Manual Review)</h4>
+                    <div id="customSnapsList" class="cred-list"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" onclick="closeCredentialsModal()">Skip (Use Placeholders)</button>
+                <button class="btn btn-primary" onclick="applyCredentials()">Apply & Convert</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner">
