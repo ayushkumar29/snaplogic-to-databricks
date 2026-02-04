@@ -1,18 +1,12 @@
-"""
-SnapLogic to Databricks Converter - Main Application
-"""
-from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, FileResponse
 import uvicorn
-import os
-import json
 from pathlib import Path
 
 from app.api.routes import router as api_router
 
-# Get the directory where main.py is located
 BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI(
@@ -21,7 +15,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for development
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -30,15 +23,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount static files (CSS, JS)
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
-
-# Include API routes
 app.include_router(api_router, prefix="/api")
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_frontend():
-    """Serve the main HTML page"""
     html_path = BASE_DIR / "static" / "index.html"
     return FileResponse(html_path)
 

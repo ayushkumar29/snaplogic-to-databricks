@@ -1,15 +1,15 @@
 # SnapLogic to Databricks Converter
 
-A powerful web-based tool that converts SnapLogic pipelines (.slp files) into Databricks PySpark code, with AI assistance for complex transformations.
+A web-based tool that converts SnapLogic pipelines (.slp files) into Databricks PySpark code, with AI assistance for complex transformations.
 
 ## Features
 
-- 🔄 **Multi-format SLP Parsing** - Handles various SnapLogic export formats
-- 📊 **Dependency Graph** - Automatically resolves parent/child pipeline relationships
-- ⚡ **40+ Snap Handlers** - Built-in converters for common snap types
-- 🤖 **AI-Powered** - Uses OpenAI or Anthropic for unknown snaps
-- 🎨 **Modern UI** - Drag-and-drop interface with syntax highlighting
-- 💬 **AI Chat Assistant** - Ask questions about your conversion
+- Multi-format SLP parsing for various SnapLogic export formats
+- Dependency graph resolution for parent/child pipeline relationships
+- Built-in converters for 40+ common snap types
+- AI-powered conversion for unknown snaps (OpenAI, Anthropic, Groq, Ollama)
+- Modern drag-and-drop interface with syntax highlighting
+- AI chat assistant for conversion questions
 
 ## Quick Start
 
@@ -23,13 +23,11 @@ pip install -r requirements.txt
 ### 2. Configure API Key (Optional - for AI features)
 
 ```bash
-# Copy the example env file
 cp .env.example .env
-
 # Edit .env and add your API key
-# OPENAI_API_KEY=sk-...
-# OR
-# ANTHROPIC_API_KEY=sk-ant-...
+# GROQ_API_KEY=your_key (recommended - free)
+# OPENAI_API_KEY=your_key
+# ANTHROPIC_API_KEY=your_key
 ```
 
 ### 3. Run the Server
@@ -56,30 +54,27 @@ Navigate to: **http://localhost:8000**
 snaplogic-to-databricks/
 ├── backend/
 │   ├── app/
-│   │   ├── api/          # FastAPI routes
-│   │   ├── engine/       # Core conversion logic
+│   │   ├── api/              # FastAPI routes
+│   │   ├── engine/           # Core conversion logic
 │   │   │   ├── parser.py     # SLP file parser
 │   │   │   ├── graph.py      # Dependency resolver
 │   │   │   └── generator.py  # PySpark generator
-│   │   └── llm/          # AI integration
+│   │   └── llm/              # AI integration
 │   │       └── agent.py      # LLM client
-│   ├── static/           # Frontend files
-│   │   ├── index.html
-│   │   ├── styles.css
-│   │   └── app.js
-│   ├── main.py           # FastAPI app
+│   ├── static/               # Frontend files
+│   ├── main.py               # FastAPI app
 │   └── requirements.txt
-└── data/                 # Sample files & uploads
+└── data/                     # Sample files & uploads
 ```
 
 ## Supported Snap Types
 
 | Category | Snaps |
 |----------|-------|
-| **Read** | CSV, JSON, Parquet, XML, JDBC, S3, Azure Blob |
-| **Write** | CSV, JSON, Parquet, JDBC, S3, Azure Blob |
-| **Transform** | Mapper, Filter, Sort, Aggregate, Join, Union |
-| **Flow** | Pipeline Execute, Router, Gate, Merge |
+| Read | CSV, JSON, Parquet, XML, JDBC, S3, Azure Blob |
+| Write | CSV, JSON, Parquet, JDBC, S3, Azure Blob |
+| Transform | Mapper, Filter, Sort, Aggregate, Join, Union |
+| Flow | Pipeline Execute, Router, Gate, Merge |
 
 ## AI Features
 

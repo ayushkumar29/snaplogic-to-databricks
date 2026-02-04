@@ -1,23 +1,17 @@
-"""
-Custom/Enterprise Snap Handler
-Uses AI to analyze and convert custom enterprise snaps.
-"""
 from typing import Dict, Any, Optional, List
 import json
 
+
 class CustomSnapHandler:
-    """Handles custom and enterprise snaps with AI assistance."""
     
     def __init__(self, llm_agent=None):
         self.llm_agent = llm_agent
         
-        # Known enterprise snap patterns and hints
         self.enterprise_hints = {
             "salesforce": {
                 "databricks_equivalent": "spark-salesforce connector or REST API",
                 "import": "# Install: databricks-connect, simple-salesforce",
-                "template": '''# Salesforce Integration
-from simple_salesforce import Salesforce
+                "template": '''from simple_salesforce import Salesforce
 
 sf = Salesforce(
     username=dbutils.secrets.get("salesforce", "username"),
@@ -25,18 +19,15 @@ sf = Salesforce(
     security_token=dbutils.secrets.get("salesforce", "token")
 )
 
-# Query Salesforce
 records = sf.query("{query}")
 df = spark.createDataFrame(records["records"])'''
             },
             "workday": {
                 "databricks_equivalent": "Workday REST API",
-                "import": "# Use requests library with Workday API",
-                "template": '''# Workday Integration
-import requests
+                "template": '''import requests
 
 api_url = "https://your-tenant.workday.com/api/v1/{endpoint}"
-headers = {{"Authorization": "Bearer " + dbutils.secrets.get("workday", "token")}}
+headers = {"Authorization": "Bearer " + dbutils.secrets.get("workday", "token")}
 
 response = requests.get(api_url, headers=headers)
 data = response.json()
@@ -44,11 +35,10 @@ df = spark.createDataFrame(data["results"])'''
             },
             "servicenow": {
                 "databricks_equivalent": "ServiceNow REST API",
-                "template": '''# ServiceNow Integration
-import requests
+                "template": '''import requests
 
 instance = "your-instance"
-api_url = f"https://{{instance}}.service-now.com/api/now/table/{{table}}"
+api_url = f"https://{instance}.service-now.com/api/now/table/{table}"
 auth = (dbutils.secrets.get("servicenow", "user"), dbutils.secrets.get("servicenow", "pass"))
 
 response = requests.get(api_url, auth=auth)
@@ -56,9 +46,7 @@ df = spark.createDataFrame(response.json()["result"])'''
             },
             "sap": {
                 "databricks_equivalent": "SAP HANA Spark Connector or RFC",
-                "template": '''# SAP Integration
-# Option 1: SAP HANA Spark Connector
-df = spark.read.format("com.sap.spark.hana") \\
+                "template": '''df = spark.read.format("com.sap.spark.hana") \\
     .option("url", dbutils.secrets.get("sap", "url")) \\
     .option("user", dbutils.secrets.get("sap", "user")) \\
     .option("password", dbutils.secrets.get("sap", "pass")) \\
@@ -67,26 +55,18 @@ df = spark.read.format("com.sap.spark.hana") \\
             },
             "kafka": {
                 "databricks_equivalent": "Spark Structured Streaming",
-                "template": '''# Kafka Integration
-df = spark.readStream.format("kafka") \\
+                "template": '''df = spark.readStream.format("kafka") \\
     .option("kafka.bootstrap.servers", "{bootstrap_servers}") \\
     .option("subscribe", "{topic}") \\
     .option("startingOffsets", "earliest") \\
     .load()
 
-# Parse the value
 from pyspark.sql.functions import from_json, col
 parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data"))'''
             }
         }
     
     def analyze_custom_snap(self, snap: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Analyze a custom snap and provide conversion guidance.
-        
-        Returns:
-            Dict with analysis results and suggested code
-        """
         snap_type = snap.get("type", "").lower()
         snap_name = snap.get("name", "Unknown")
         properties = snap.get("properties", {})
@@ -101,7 +81,6 @@ parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data
             "documentation_hints": []
         }
         
-        # Check if we have hints for this enterprise snap
         for enterprise_type, hints in self.enterprise_hints.items():
             if enterprise_type in snap_type:
                 result["is_known_enterprise"] = True
@@ -115,7 +94,6 @@ parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data
                 )
                 break
         
-        # If unknown, prepare questions for user
         if not result["is_known_enterprise"]:
             result["questions_for_user"] = self._generate_questions(snap)
             result["suggested_approach"] = "Manual conversion with AI assistance"
@@ -123,7 +101,6 @@ parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data
         return result
     
     def _apply_template(self, template: str, properties: Dict) -> str:
-        """Apply property values to a template."""
         code = template
         for key, value in properties.items():
             placeholder = "{" + key + "}"
@@ -132,13 +109,12 @@ parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data
         return code
     
     def _generate_questions(self, snap: Dict) -> List[Dict]:
-        """Generate questions to ask the user about a custom snap."""
         questions = []
         
         questions.append({
             "id": "purpose",
             "question": f"What does the snap '{snap.get('name', 'Unknown')}' do?",
-            "hint": "e.g., Reads from SAP, Calls internal API, Transforms data in a specific way"
+            "hint": "e.g., Reads from SAP, Calls internal API, Transforms data"
         })
         
         questions.append({
@@ -162,7 +138,6 @@ parsed_df = df.select(from_json(col("value").cast("string"), schema).alias("data
         return questions
     
     async def generate_with_ai(self, snap: Dict, user_answers: Dict = None) -> str:
-        """Use AI to generate code for a custom snap."""
         if not self.llm_agent or not self.llm_agent.is_available():
             return self._generate_placeholder(snap)
         
@@ -206,45 +181,21 @@ Return ONLY the Python code."""
             return self._generate_placeholder(snap, str(e))
     
     def _generate_placeholder(self, snap: Dict, error: str = None) -> str:
-        """Generate a placeholder for manual implementation."""
         snap_type = snap.get('type', 'Unknown')
         snap_name = snap.get('name', 'Unknown')
         properties = snap.get('properties', {})
         
-        code = f'''# ============================================================
-# CUSTOM ENTERPRISE SNAP - Requires Manual Implementation
-# ============================================================
+        code = f'''# CUSTOM ENTERPRISE SNAP - Requires Manual Implementation
 # Snap Type: {snap_type}
 # Snap Name: {snap_name}
 #
-# This is a custom/enterprise snap that requires manual conversion.
-# 
 # Original Properties:
 # {json.dumps(properties, indent=2)[:500]}...
 #
-# RECOMMENDED STEPS:
-# 1. Identify what external system this connects to
-# 2. Find the equivalent Databricks connector or API
-# 3. Use dbutils.secrets for credentials
-# 4. Test with a small sample first
-#
-# TEMPLATE:
 def process_{snap_name.replace(" ", "_").replace("-", "_").lower()}(df):
-    """
-    TODO: Implement logic for {snap_name}
-    
-    Args:
-        df: Input DataFrame
-    
-    Returns:
-        Processed DataFrame
-    """
-    # Your implementation here
-    result_df = df  # Placeholder
-    
+    result_df = df
     return result_df
 
-# Call the function
 df_result = process_{snap_name.replace(" ", "_").replace("-", "_").lower()}(df)
 '''
         

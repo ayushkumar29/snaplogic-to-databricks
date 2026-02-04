@@ -1,7 +1,3 @@
-"""
-LLM Agent for SnapLogic to Databricks Conversion
-Supports: Groq (FREE), Ollama (LOCAL), OpenAI, Anthropic
-"""
 import os
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
@@ -9,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class LLMAgent:
-    """AI Agent supporting multiple LLM providers."""
     
     def __init__(self):
         self.llm = None
@@ -17,24 +12,20 @@ class LLMAgent:
         self._initialize_llm()
     
     def _initialize_llm(self):
-        """Initialize LLM - Priority: Groq > Ollama > OpenAI > Anthropic"""
-        
-        # 1. Try Groq first (FREE & FAST)
         if os.getenv("GROQ_API_KEY"):
             try:
                 from langchain_groq import ChatGroq
                 self.llm = ChatGroq(
-                    model="llama-3.3-70b-versatile",  # Best for code
+                    model="llama-3.3-70b-versatile",
                     temperature=0.2,
                     api_key=os.getenv("GROQ_API_KEY")
                 )
                 self.provider = "groq"
-                print("✅ Using Groq (Llama 3.3 70B) - FREE & FAST")
+                print("Using Groq (Llama 3.3 70B)")
                 return
             except Exception as e:
                 print(f"Groq init failed: {e}")
         
-        # 2. Try Ollama (LOCAL & FREE)
         if os.getenv("OLLAMA_MODEL") or self._check_ollama():
             try:
                 from langchain_ollama import ChatOllama
@@ -45,12 +36,11 @@ class LLMAgent:
                     base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
                 )
                 self.provider = "ollama"
-                print(f"✅ Using Ollama ({model}) - LOCAL & FREE")
+                print(f"Using Ollama ({model})")
                 return
             except Exception as e:
                 print(f"Ollama init failed: {e}")
         
-        # 3. Try OpenAI
         if os.getenv("OPENAI_API_KEY"):
             try:
                 from langchain_openai import ChatOpenAI
@@ -60,12 +50,11 @@ class LLMAgent:
                     api_key=os.getenv("OPENAI_API_KEY")
                 )
                 self.provider = "openai"
-                print("✅ Using OpenAI (GPT-4o)")
+                print("Using OpenAI (GPT-4o)")
                 return
             except Exception as e:
                 print(f"OpenAI init failed: {e}")
         
-        # 4. Try Anthropic
         if os.getenv("ANTHROPIC_API_KEY"):
             try:
                 from langchain_anthropic import ChatAnthropic
@@ -75,16 +64,15 @@ class LLMAgent:
                     api_key=os.getenv("ANTHROPIC_API_KEY")
                 )
                 self.provider = "anthropic"
-                print("✅ Using Anthropic (Claude 3.5)")
+                print("Using Anthropic (Claude 3.5)")
                 return
             except Exception as e:
                 print(f"Anthropic init failed: {e}")
         
-        print("⚠️ No LLM configured. AI features disabled.")
-        print("   Set GROQ_API_KEY (free) or run Ollama locally.")
+        print("No LLM configured. AI features disabled.")
+        print("Set GROQ_API_KEY (free) or run Ollama locally.")
     
     def _check_ollama(self) -> bool:
-        """Check if Ollama is running locally."""
         try:
             import httpx
             response = httpx.get("http://localhost:11434/api/tags", timeout=2)
@@ -93,7 +81,6 @@ class LLMAgent:
             return False
     
     async def resolve_snap(self, snap: Dict[str, Any]) -> Optional[str]:
-        """Generate PySpark code for unknown snaps."""
         if not self.llm:
             return None
         
@@ -114,7 +101,6 @@ Return ONLY Python code, no explanations."""
             return None
     
     async def ask(self, snap_data: Dict[str, Any], question: Optional[str] = None) -> str:
-        """Ask AI about snap conversion."""
         if not self.llm:
             return "AI disabled. Set GROQ_API_KEY (free at console.groq.com) or run Ollama."
         
@@ -128,7 +114,6 @@ Question: {question or "How to convert this to PySpark?"}"""
             return f"Error: {e}"
     
     async def optimize_code(self, code: str) -> str:
-        """Optimize generated PySpark code."""
         if not self.llm:
             return code
         
