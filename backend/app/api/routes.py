@@ -7,7 +7,10 @@ from fastapi.responses import JSONResponse
 from typing import List, Optional, Dict, Any
 import json
 import os
+import uuid
+import shutil
 from pathlib import Path
+from datetime import datetime, timedelta
 
 from app.engine.parser import SLPParser
 from app.engine.graph import DependencyGraph
@@ -18,9 +21,33 @@ from app.llm.agent import LLMAgent
 
 router = APIRouter()
 
-# Temporary storage for uploaded files
-UPLOAD_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "uploads"
-UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+# Base upload directory - each session gets its own subdirectory
+UPLOAD_BASE_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "uploads"
+UPLOAD_BASE_DIR.mkdir(parents=True, exist_ok=True)
+
+# Session expiry time (24 hours)
+SESSION_EXPIRY_HOURS = 24
+
+
+def get_session_dir(session_id: str) -> Path:
+    """Get or create the upload directory for a specific session."""
+    session_dir = UPLOAD_BASE_DIR / session_id
+    session_dir.mkdir(parents=True, exist_ok=True)
+    return session_dir
+
+
+def cleanup_old_sessions():
+    """Remove session directories older than SESSION_EXPIRY_HOURS."""
+    try:
+        cutoff_time = datetime.now() - timedelta(hours=SESSION_EXPIRY_HOURS)
+        for session_dir in UPLOAD_BASE_DIR.iterdir():
+            if session_dir.is_dir():
+                # Check directory modification time
+                dir_mtime = datetime.fromtimestamp(session_dir.stat().st_mtime)
+                if dir_mtime < cutoff_time:
+                    shutil.rmtree(session_dir, ignore_errors=True)
+    except Exception:
+        pass  # Don't fail on cleanup errors
 
 # Initialize components
 parser = SLPParser()
@@ -31,11 +58,27 @@ credential_detector = CredentialDetector()
 custom_snap_handler = CustomSnapHandler(llm_agent)
 
 @router.post("/upload")
-async def upload_files(files: List[UploadFile] = File(...)):
+async def upload_files(
+    files: List[UploadFile] = File(...),
+    session_id: Optional[str] = Form(None)
+):
     """
     Upload one or more SLP files for conversion.
-    Returns parsed structure, missing dependencies, and detected credentials.
+    Returns parsed structure, missing dependencies, detected credentials, and session_id.
+    
+    If session_id is provided, files are added to existing session.
+    Otherwise, a new session is created.
     """
+    # Cleanup old sessions periodically
+    cleanup_old_sessions()
+    
+    # Generate or use existing session ID
+    if not session_id:
+        session_id = str(uuid.uuid4())
+    
+    # Get session-specific upload directory
+    session_dir = get_session_dir(session_id)
+    
     uploaded_pipelines = []
     missing_dependencies = []
     all_credentials = {
@@ -52,9 +95,9 @@ async def upload_files(files: List[UploadFile] = File(...)):
             continue
             
         content = await file.read()
-        file_path = UPLOAD_DIR / file.filename
+        file_path = session_dir / file.filename
         
-        # Save file
+        # Save file to session-specific directory
         with open(file_path, 'wb') as f:
             f.write(content)
         
@@ -97,6 +140,7 @@ async def upload_files(files: List[UploadFile] = File(...)):
     
     return {
         "success": True,
+        "session_id": session_id,  # Return session ID for subsequent requests
         "pipelines": uploaded_pipelines,
         "missing_dependencies": list(set(missing_dependencies)),
         "detected_credentials": all_credentials,
@@ -105,14 +149,19 @@ async def upload_files(files: List[UploadFile] = File(...)):
     }
 
 @router.post("/analyze-credentials")
-async def analyze_credentials(pipeline_name: str = Form(...)):
+async def analyze_credentials(
+    pipeline_name: str = Form(...),
+    session_id: str = Form(...)
+):
     """
     Analyze a specific pipeline for credentials and accounts.
+    Requires session_id from the upload response.
     """
-    file_path = UPLOAD_DIR / pipeline_name
+    session_dir = get_session_dir(session_id)
+    file_path = session_dir / pipeline_name
     
     if not file_path.exists():
-        raise HTTPException(status_code=404, detail="Pipeline not found")
+        raise HTTPException(status_code=404, detail="Pipeline not found in this session")
     
     try:
         with open(file_path, 'r') as f:
@@ -124,6 +173,7 @@ async def analyze_credentials(pipeline_name: str = Form(...)):
         
         return {
             "pipeline": pipeline_name,
+            "session_id": session_id,
             "detected": detected,
             "config_template": config_template,
             "summary": {
@@ -158,13 +208,16 @@ async def analyze_custom_snap(
 @router.post("/convert")
 async def convert_pipelines(
     pipeline_names: List[str] = Form(...),
+    session_id: str = Form(...),
     use_ai: bool = Form(True),
     credential_config: Optional[str] = Form(None)
 ):
     """
     Convert uploaded pipelines to Databricks code.
+    Requires session_id from the upload response.
     Optionally apply credential configuration.
     """
+    session_dir = get_session_dir(session_id)
     results = []
     unknown_snaps = []
     custom_snaps_info = []
@@ -181,12 +234,12 @@ async def convert_pipelines(
             pass
     
     for pipeline_name in pipeline_names:
-        file_path = UPLOAD_DIR / pipeline_name
+        file_path = session_dir / pipeline_name
         
         if not file_path.exists():
             results.append({
                 "pipeline": pipeline_name,
-                "error": "File not found. Please upload first.",
+                "error": "File not found in this session. Please upload first.",
                 "success": False
             })
             continue
@@ -270,22 +323,25 @@ async def ask_ai_for_help(
     response = await llm_agent.ask(snap_data, question)
     return {"response": response}
 
-@router.get("/pipelines")
-async def list_uploaded_pipelines():
-    """List all uploaded pipeline files."""
-    files = list(UPLOAD_DIR.glob("*.slp")) + list(UPLOAD_DIR.glob("*.json"))
+@router.get("/pipelines/{session_id}")
+async def list_uploaded_pipelines(session_id: str):
+    """List all uploaded pipeline files for a specific session."""
+    session_dir = get_session_dir(session_id)
+    files = list(session_dir.glob("*.slp")) + list(session_dir.glob("*.json"))
     return {
+        "session_id": session_id,
         "pipelines": [f.name for f in files]
     }
 
-@router.delete("/pipelines/{filename}")
-async def delete_pipeline(filename: str):
-    """Delete an uploaded pipeline file."""
-    file_path = UPLOAD_DIR / filename
+@router.delete("/pipelines/{session_id}/{filename}")
+async def delete_pipeline(session_id: str, filename: str):
+    """Delete an uploaded pipeline file from a specific session."""
+    session_dir = get_session_dir(session_id)
+    file_path = session_dir / filename
     if file_path.exists():
         os.remove(file_path)
-        return {"message": f"Deleted {filename}"}
-    raise HTTPException(status_code=404, detail="File not found")
+        return {"session_id": session_id, "message": f"Deleted {filename}"}
+    raise HTTPException(status_code=404, detail="File not found in this session")
 
 @router.get("/llm-status")
 async def get_llm_status():
