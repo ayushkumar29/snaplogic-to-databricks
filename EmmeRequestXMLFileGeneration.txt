@@ -1,0 +1,5323 @@
+{
+  "class_fqid": "com-snaplogic-pipeline_9",
+  "snode_id": "69172a0c397a12e03555d5ee",
+  "instance_id": "c6baf733-a29e-414a-8240-ae0d1e33b086",
+  "instance_version": 1,
+  "link_map": {
+    "link102": {
+      "dst_id": "a90b8c8f-dc21-4696-bc62-a2a904e6fef9",
+      "dst_view_id": "input0",
+      "src_id": "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link103": {
+      "dst_id": "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4",
+      "dst_view_id": "input0",
+      "src_id": "72dc835e-216b-43e3-9891-df7bfb0a3426",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link105": {
+      "dst_id": "28fccde5-77dc-4836-ad31-e509a303b0f7",
+      "dst_view_id": "input0",
+      "src_id": "a98603e8-5701-41e6-8ca8-a57841b46de3",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link106": {
+      "dst_id": "67c34b8f-4f0f-4819-b607-17061e3b3567",
+      "dst_view_id": "input0",
+      "src_id": "28fccde5-77dc-4836-ad31-e509a303b0f7",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link110": {
+      "dst_id": "dd8fe012-17cb-4441-9339-e3b1757353d2",
+      "dst_view_id": "input101",
+      "src_id": "67c34b8f-4f0f-4819-b607-17061e3b3567",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link112": {
+      "dst_id": "d550646d-1cf2-402d-a979-ea565ebc0a49",
+      "dst_view_id": "input0",
+      "src_id": "c36cfb90-0b36-4ab8-9769-047a9570e21a",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link115": {
+      "dst_id": "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af",
+      "dst_view_id": "input0",
+      "src_id": "e98f7298-1f8f-41c9-98d6-c8540d85c783",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link119": {
+      "dst_id": "e98f7298-1f8f-41c9-98d6-c8540d85c783",
+      "dst_view_id": "input0",
+      "src_id": "ecfa7cbe-b661-42f4-8841-24b07003a70b",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link121": {
+      "dst_id": "bec970b5-e973-4663-946c-2e162812cd4f",
+      "dst_view_id": "input101",
+      "src_id": "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link125": {
+      "dst_id": "5d224f36-2913-4eab-a300-9a47a1adf6ec",
+      "dst_view_id": "input0",
+      "src_id": "bd922108-5085-4318-a164-2a35d7ea8c01",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link127": {
+      "dst_id": "48c052fc-b9fa-4d75-a76b-c247714d5e30",
+      "dst_view_id": "input0",
+      "src_id": "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link128": {
+      "dst_id": "661a5d2d-b5f6-4f1f-9892-f57062452d64",
+      "dst_view_id": "input0",
+      "src_id": "48c052fc-b9fa-4d75-a76b-c247714d5e30",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link130": {
+      "dst_id": "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe",
+      "dst_view_id": "input101",
+      "src_id": "661a5d2d-b5f6-4f1f-9892-f57062452d64",
+      "src_view_id": "output1",
+      "isGoto": false
+    },
+    "link136": {
+      "dst_id": "bd922108-5085-4318-a164-2a35d7ea8c01",
+      "dst_view_id": "input0",
+      "src_id": "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe",
+      "src_view_id": "output1",
+      "isGoto": false
+    },
+    "link137": {
+      "dst_id": "4cef65df-281e-4246-8906-1290d800d41c",
+      "dst_view_id": "input0",
+      "src_id": "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link140": {
+      "dst_id": "1038b888-7d3f-4d4e-a0c0-b20c8bc1007e",
+      "dst_view_id": "input0",
+      "src_id": "dd8fe012-17cb-4441-9339-e3b1757353d2",
+      "src_view_id": "output1",
+      "isGoto": false
+    },
+    "link145": {
+      "dst_id": "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5",
+      "dst_view_id": "input0",
+      "src_id": "c4f65b13-499f-446e-a665-9ff268955a4a",
+      "src_view_id": "output102",
+      "isGoto": true
+    },
+    "link146": {
+      "dst_id": "72dc835e-216b-43e3-9891-df7bfb0a3426",
+      "dst_view_id": "input101",
+      "src_id": "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link147": {
+      "dst_id": "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee",
+      "dst_view_id": "input0",
+      "src_id": "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link150": {
+      "dst_id": "3631ca9f-11f4-4489-ac0d-2af3357943cc",
+      "dst_view_id": "input0",
+      "src_id": "f4c77204-19b7-4fde-bfe7-669aba74e879",
+      "src_view_id": "output1",
+      "isGoto": false
+    },
+    "link151": {
+      "dst_id": "f4c77204-19b7-4fde-bfe7-669aba74e879",
+      "dst_view_id": "input101",
+      "src_id": "949a8ece-f29a-41ec-9822-8075617c0b7e",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link170": {
+      "dst_id": "998a1a99-45c1-4656-843e-a71cb483aa6f",
+      "dst_view_id": "input101",
+      "src_id": "8f42ae43-ccb4-47cb-af03-0367777337b0",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link171": {
+      "dst_id": "949a8ece-f29a-41ec-9822-8075617c0b7e",
+      "dst_view_id": "input0",
+      "src_id": "998a1a99-45c1-4656-843e-a71cb483aa6f",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link172": {
+      "dst_id": "8f42ae43-ccb4-47cb-af03-0367777337b0",
+      "dst_view_id": "input101",
+      "src_id": "661a5d2d-b5f6-4f1f-9892-f57062452d64",
+      "src_view_id": "output0",
+      "isGoto": true
+    },
+    "link174": {
+      "dst_id": "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba",
+      "dst_view_id": "input0",
+      "src_id": "ed7b3574-2371-4082-b500-8ace0ee8b266",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link179": {
+      "dst_id": "0707f6f0-39b9-42e1-8355-310ebcf6e515",
+      "dst_view_id": "input0",
+      "src_id": "f4c77204-19b7-4fde-bfe7-669aba74e879",
+      "src_view_id": "output0",
+      "isGoto": true
+    },
+    "link181": {
+      "dst_id": "0707f6f0-39b9-42e1-8355-310ebcf6e515",
+      "dst_view_id": "input1",
+      "src_id": "cfba4488-3236-4941-94b1-bc52d3953193",
+      "src_view_id": "output0",
+      "isGoto": true
+    },
+    "link183": {
+      "dst_id": "cfba4488-3236-4941-94b1-bc52d3953193",
+      "dst_view_id": "input0",
+      "src_id": "5287af35-42c3-471f-8051-c078db06fe66",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link188": {
+      "dst_id": "5287af35-42c3-471f-8051-c078db06fe66",
+      "dst_view_id": "input0",
+      "src_id": "d93f9e9c-b4d5-4925-92b3-444248598bbb",
+      "src_view_id": "output102",
+      "isGoto": false
+    },
+    "link189": {
+      "dst_id": "d93f9e9c-b4d5-4925-92b3-444248598bbb",
+      "dst_view_id": "input101",
+      "src_id": "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link190": {
+      "dst_id": "de377cf3-cec3-46dd-9a4d-bbae21b34317",
+      "dst_view_id": "input0",
+      "src_id": "a90b8c8f-dc21-4696-bc62-a2a904e6fef9",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link192": {
+      "dst_id": "c36cfb90-0b36-4ab8-9769-047a9570e21a",
+      "dst_view_id": "input101",
+      "src_id": "dd8fe012-17cb-4441-9339-e3b1757353d2",
+      "src_view_id": "output0",
+      "isGoto": true
+    },
+    "link194": {
+      "dst_id": "60f30282-fb63-4093-83f5-f666adc09883",
+      "dst_view_id": "input0",
+      "src_id": "d550646d-1cf2-402d-a979-ea565ebc0a49",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link195": {
+      "dst_id": "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72",
+      "dst_view_id": "input101",
+      "src_id": "bec970b5-e973-4663-946c-2e162812cd4f",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link196": {
+      "dst_id": "f0eefc59-aab0-4a60-a029-33fff6f54ea1",
+      "dst_view_id": "input0",
+      "src_id": "5d224f36-2913-4eab-a300-9a47a1adf6ec",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link197": {
+      "dst_id": "ed7b3574-2371-4082-b500-8ace0ee8b266",
+      "dst_view_id": "input101",
+      "src_id": "81c2e394-ac25-41f8-8427-27ea1865447b",
+      "src_view_id": "output102",
+      "isGoto": true
+    },
+    "link198": {
+      "dst_id": "81c2e394-ac25-41f8-8427-27ea1865447b",
+      "dst_view_id": "input101",
+      "src_id": "d0903af1-6b04-4a4c-8305-28671b17dff3",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link200": {
+      "dst_id": "a98603e8-5701-41e6-8ca8-a57841b46de3",
+      "dst_view_id": "input0",
+      "src_id": "a6c109d6-b933-477b-be01-ec54fc535c3c",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link201": {
+      "dst_id": "a6c109d6-b933-477b-be01-ec54fc535c3c",
+      "dst_view_id": "input0",
+      "src_id": "de377cf3-cec3-46dd-9a4d-bbae21b34317",
+      "src_view_id": "output101",
+      "isGoto": false
+    },
+    "link202": {
+      "dst_id": "ecfa7cbe-b661-42f4-8841-24b07003a70b",
+      "dst_view_id": "input101",
+      "src_id": "99d156aa-aad2-4897-98d0-3e0b0dc9d514",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link203": {
+      "dst_id": "99d156aa-aad2-4897-98d0-3e0b0dc9d514",
+      "dst_view_id": "input0",
+      "src_id": "60f30282-fb63-4093-83f5-f666adc09883",
+      "src_view_id": "output101",
+      "isGoto": false
+    },
+    "link204": {
+      "dst_id": "d0903af1-6b04-4a4c-8305-28671b17dff3",
+      "dst_view_id": "input0",
+      "src_id": "503dfc68-dd46-4525-b693-93460d2cd745",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link205": {
+      "dst_id": "503dfc68-dd46-4525-b693-93460d2cd745",
+      "dst_view_id": "input0",
+      "src_id": "f0eefc59-aab0-4a60-a029-33fff6f54ea1",
+      "src_view_id": "output101",
+      "isGoto": false
+    }
+  },
+  "link_serial": 206,
+  "property_map": {
+    "info": {
+      "label": {
+        "value": "EmmeRequestXMLFileGeneration"
+      },
+      "author": {
+        "value": "rchaudhari2@humana.com"
+      },
+      "pipeline_doc_uri": {
+        "value": null
+      },
+      "notes": {
+        "value": null
+      },
+      "purpose": {
+        "value": null
+      }
+    },
+    "error": {
+      "error_behavior": {
+        "value": "none"
+      }
+    },
+    "settings": {
+      "error_pipeline": {
+        "value": null,
+        "expression": false
+      },
+      "error_param_table": {
+        "value": []
+      },
+      "param_table": {
+        "value": [
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "FileId"
+            },
+            "value": {
+              "value": "$FileId"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "FileName"
+            },
+            "value": {
+              "value": "$FileName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "MessageId"
+            },
+            "value": {
+              "value": "$MessageId"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "FileNameTemp"
+            },
+            "value": {
+              "value": "$FileNameTemp"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "DestinationFTPServer"
+            },
+            "value": {
+              "value": "$DestinationFTPServer"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "DestinationFTPDirectory"
+            },
+            "value": {
+              "value": "$DestinationFTPDirectory"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "SourceFTPPath"
+            },
+            "value": {
+              "value": "$SourceFTPPath"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "FTPUserName"
+            },
+            "value": {
+              "value": "$FTPUserName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "EmailInfo"
+            },
+            "value": {
+              "value": "$EmailInfo"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "EnvironmentValue"
+            },
+            "value": {
+              "value": "$EnvironmentValue"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "ProcessName"
+            },
+            "value": {
+              "value": "$ProcessName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "ErrorMailingList"
+            },
+            "value": {
+              "value": "$ErrorMailingList"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "ServiceNowApiUrl"
+            },
+            "value": {
+              "value": "$ServiceNowApiUrl"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "HUM_MFTBaseUrl"
+            },
+            "value": {
+              "value": "$HUM_MFTBaseUrl"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "HUM_MFTPath"
+            },
+            "value": {
+              "value": "$HUM_MFTPath"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": true
+            },
+            "key": {
+              "value": "Token"
+            },
+            "value": {
+              "value": "$Token"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          }
+        ]
+      },
+      "imports": {
+        "value": []
+      }
+    },
+    "input": {
+      "c4f65b13-499f-446e-a665-9ff268955a4a_input101": {
+        "label": {
+          "value": "Get ConsultIds List - input0"
+        },
+        "view_type": {
+          "value": "document"
+        }
+      }
+    },
+    "output": {
+      "0707f6f0-39b9-42e1-8355-310ebcf6e515_output0": {
+        "view_type": {
+          "value": "document"
+        },
+        "label": {
+          "value": "Union - output0"
+        }
+      }
+    }
+  },
+  "render_map": {
+    "scale_ratio": 1,
+    "pan_x_num": 0,
+    "pan_y_num": 0,
+    "default_snaplex": "55d8b32b80b28214a4408ae9",
+    "detail_map": {
+      "c4f65b13-499f-446e-a665-9ff268955a4a": {
+        "grid_x_int": 1,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5": {
+        "grid_x_int": 3,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "72dc835e-216b-43e3-9891-df7bfb0a3426": {
+        "grid_x_int": 5,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "de377cf3-cec3-46dd-9a4d-bbae21b34317": {
+        "grid_x_int": 8,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "a90b8c8f-dc21-4696-bc62-a2a904e6fef9": {
+        "grid_x_int": 7,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4": {
+        "grid_x_int": 6,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "a98603e8-5701-41e6-8ca8-a57841b46de3": {
+        "grid_x_int": 10,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "28fccde5-77dc-4836-ad31-e509a303b0f7": {
+        "grid_x_int": 11,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "67c34b8f-4f0f-4819-b607-17061e3b3567": {
+        "grid_x_int": 12,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "dd8fe012-17cb-4441-9339-e3b1757353d2": {
+        "grid_x_int": 13,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "error": {}
+      },
+      "c36cfb90-0b36-4ab8-9769-047a9570e21a": {
+        "grid_x_int": 1,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "d550646d-1cf2-402d-a979-ea565ebc0a49": {
+        "grid_x_int": 2,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "e98f7298-1f8f-41c9-98d6-c8540d85c783": {
+        "grid_x_int": 6,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af": {
+        "grid_x_int": 7,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "ecfa7cbe-b661-42f4-8841-24b07003a70b": {
+        "grid_x_int": 5,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "bec970b5-e973-4663-946c-2e162812cd4f": {
+        "grid_x_int": 8,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72": {
+        "grid_x_int": 9,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe": {
+        "grid_x_int": 12,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "error": {}
+      },
+      "bd922108-5085-4318-a164-2a35d7ea8c01": {
+        "grid_x_int": 13,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "48c052fc-b9fa-4d75-a76b-c247714d5e30": {
+        "grid_x_int": 10,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "661a5d2d-b5f6-4f1f-9892-f57062452d64": {
+        "grid_x_int": 11,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "error": {}
+      },
+      "5d224f36-2913-4eab-a300-9a47a1adf6ec": {
+        "grid_x_int": 14,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "f0eefc59-aab0-4a60-a029-33fff6f54ea1": {
+        "grid_x_int": 15,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "4cef65df-281e-4246-8906-1290d800d41c": {
+        "grid_x_int": 13,
+        "grid_y_int": 5,
+        "rot_int": 270,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "81c2e394-ac25-41f8-8427-27ea1865447b": {
+        "grid_x_int": 18,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "8f42ae43-ccb4-47cb-af03-0367777337b0": {
+        "grid_x_int": 1,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "998a1a99-45c1-4656-843e-a71cb483aa6f": {
+        "grid_x_int": 2,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "949a8ece-f29a-41ec-9822-8075617c0b7e": {
+        "grid_x_int": 3,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "1038b888-7d3f-4d4e-a0c0-b20c8bc1007e": {
+        "grid_x_int": 14,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee": {
+        "grid_x_int": 4,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "f4c77204-19b7-4fde-bfe7-669aba74e879": {
+        "grid_x_int": 4,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "error": {}
+      },
+      "3631ca9f-11f4-4489-ac0d-2af3357943cc": {
+        "grid_x_int": 5,
+        "grid_y_int": 6,
+        "rot_int": 270,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "ed7b3574-2371-4082-b500-8ace0ee8b266": {
+        "grid_x_int": 17,
+        "grid_y_int": 7,
+        "rot_int": 180,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 90,
+        "view": "output",
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba": {
+        "grid_x_int": 16,
+        "grid_y_int": 7,
+        "rot_int": 180,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 180,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "0707f6f0-39b9-42e1-8355-310ebcf6e515": {
+        "grid_x_int": 6,
+        "grid_y_int": 5,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {
+          "input1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "error": {}
+      },
+      "cfba4488-3236-4941-94b1-bc52d3953193": {
+        "grid_x_int": 13,
+        "grid_y_int": 7,
+        "rot_int": 180,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 180,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "5287af35-42c3-471f-8051-c078db06fe66": {
+        "grid_x_int": 14,
+        "grid_y_int": 7,
+        "rot_int": 180,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 180,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "d93f9e9c-b4d5-4925-92b3-444248598bbb": {
+        "grid_x_int": 15,
+        "grid_y_int": 7,
+        "rot_int": 180,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 180,
+        "output": {},
+        "input": {},
+        "error": {}
+      },
+      "60f30282-fb63-4093-83f5-f666adc09883": {
+        "grid_x_int": 3,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "d0903af1-6b04-4a4c-8305-28671b17dff3": {
+        "grid_x_int": 17,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "a6c109d6-b933-477b-be01-ec54fc535c3c": {
+        "grid_x_int": 9,
+        "grid_y_int": 3,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "99d156aa-aad2-4897-98d0-3e0b0dc9d514": {
+        "grid_x_int": 4,
+        "grid_y_int": 4,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "503dfc68-dd46-4525-b693-93460d2cd745": {
+        "grid_x_int": 16,
+        "grid_y_int": 6,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      }
+    },
+    "notes": {
+      "961da86b-f355-4590-a23a-0073f4e423fc": {
+        "creator": "Ashu C",
+        "content": "RxMentorInspire_PatientTakeaway\nQa-emmeftp\nV1/emme/SourceSystem/Request\nsimclrdat01\n/root_vdm_1/fs114/web_pharmacy/RxInspire/Test/Outbound/PatientTakeaway/EmmeExport/Archive/\nHUMAD\\PBM_Inspire_FTPTEST\nPatientTakeawayEmmeExport\n",
+        "created": "2023-03-20T07:55:35.285Z",
+        "width": "200px",
+        "height": "302px",
+        "x": 10,
+        "y": 10
+      }
+    }
+  },
+  "snap_map": {
+    "c4f65b13-499f-446e-a665-9ff268955a4a": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "c4f65b13-499f-446e-a665-9ff268955a4a_1",
+      "instance_id": "c4f65b13-499f-446e-a665-9ff268955a4a",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get ConsultIds List"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "EXEC dbo.spGetPatientTakeawayConsultIds",
+            "expression": false
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5": {
+      "class_fqid": "com-snaplogic-snaps-flow-pipeexec_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-pipeexec",
+      "class_version": 1,
+      "instance_fqid": "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5_1",
+      "instance_id": "71f4fa05-1e13-4a4d-a9c5-34adebdb86a5",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Validate ConsultIds"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "timeout": {
+            "value": null,
+            "expression": false
+          },
+          "pipeline": {
+            "expression": false,
+            "value": "Validate_ConsultIDs"
+          },
+          "execLabel": {
+            "expression": true,
+            "value": null
+          },
+          "params": {
+            "value": [
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "$ConsultId"
+                },
+                "paramName": {
+                  "value": "ConsultId"
+                }
+              },
+              {
+                "paramName": {
+                  "value": "FileId"
+                },
+                "paramValue": {
+                  "value": "_FileId",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "value": null,
+            "expression": false
+          },
+          "retryLimit": {
+            "value": null,
+            "expression": false
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "executable_during_suggest": {
+            "value": true
+          },
+          "batchSize": {
+            "value": 1
+          },
+          "poolSize": {
+            "value": 1,
+            "expression": false
+          },
+          "loopDocument": {
+            "expression": true
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "72dc835e-216b-43e3-9891-df7bfb0a3426": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "72dc835e-216b-43e3-9891-df7bfb0a3426_1",
+      "instance_id": "72dc835e-216b-43e3-9891-df7bfb0a3426",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "spGetMessagingEmmeRequest "
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "'EXEC dbo.spGetMessagingEmmeRequest @MessageId ='+ _MessageId ",
+            "expression": true
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "de377cf3-cec3-46dd-9a4d-bbae21b34317": {
+      "class_fqid": "com-snaplogic-snaps-binary-write_3-main19844",
+      "class_id": "com-snaplogic-snaps-binary-write",
+      "class_version": 3,
+      "instance_fqid": "de377cf3-cec3-46dd-9a4d-bbae21b34317_1",
+      "instance_id": "de377cf3-cec3-46dd-9a4d-bbae21b34317",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Write Temperory File"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "flushIntervalKb": {
+            "value": -1
+          },
+          "UserPermissionsKey": {
+            "value": []
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "cannedAcls": {
+            "value": "None"
+          },
+          "filename": {
+            "value": "_HUM_MFTBaseUrl + _HUM_MFTPath + _FileNameTemp",
+            "expression": true
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "preventURLEncoding": {
+            "value": false
+          },
+          "writeEmptyFile": {
+            "value": false
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "createDir": {
+            "value": false
+          },
+          "fileAction": {
+            "value": "OVERWRITE"
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "validate": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'InspireMFTAccountNPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'InspireMFTAccountNPE' : 'InspireMFTAccountProd')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "output": {
+          "output101": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "a90b8c8f-dc21-4696-bc62-a2a904e6fef9": {
+      "class_fqid": "com-snaplogic-snaps-transform-csvformatter_3-431patches19441",
+      "class_id": "com-snaplogic-snaps-transform-csvformatter",
+      "class_version": 3,
+      "instance_fqid": "a90b8c8f-dc21-4696-bc62-a2a904e6fef9_1",
+      "instance_id": "a90b8c8f-dc21-4696-bc62-a2a904e6fef9",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "CSV Formatter"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "binary"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "writeBOM": {
+            "value": false
+          },
+          "delimiter": {
+            "expression": false,
+            "value": "~~~~"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "userDefinedHeader": {
+            "value": []
+          },
+          "charset": {
+            "value": "UTF-8"
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "quoteCharacter": {
+            "value": "\"",
+            "expression": false
+          },
+          "outputHeader": {
+            "value": []
+          },
+          "useDefinedHeader": {
+            "value": false
+          },
+          "newlineCharacter": {
+            "value": "CR+LF"
+          },
+          "escapeChar": {
+            "value": "^",
+            "expression": false
+          },
+          "errorPolicy": {
+            "value": "Default"
+          },
+          "ignoreEmptyStream": {
+            "value": true
+          },
+          "quoteMode": {
+            "value": "NONE"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "431patches19441"
+    },
+    "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-431patches19441",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4_1",
+      "instance_id": "b37b1a33-2c01-49f9-b0a8-7a5b5f34cad4",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Mapper"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "nullSafeAccess": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "targetPath": {
+                      "value": "$OutputColumn"
+                    },
+                    "expression": {
+                      "expression": true,
+                      "value": "$.get(\"OutputColumn\").replaceAll('\\n',' ')"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "431patches19441"
+    },
+    "a98603e8-5701-41e6-8ca8-a57841b46de3": {
+      "class_fqid": "com-snaplogic-snaps-flow-pipeexec_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-pipeexec",
+      "class_version": 1,
+      "instance_fqid": "a98603e8-5701-41e6-8ca8-a57841b46de3_1",
+      "instance_id": "a98603e8-5701-41e6-8ca8-a57841b46de3",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "FulFillmentRequestDataToMainTable"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "timeout": {
+            "value": null,
+            "expression": false
+          },
+          "pipeline": {
+            "expression": false,
+            "value": "LoadDatatoMainTable"
+          },
+          "execLabel": {
+            "expression": true,
+            "value": null
+          },
+          "params": {
+            "value": [
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_MessageId"
+                },
+                "paramName": {
+                  "value": "MessageId"
+                }
+              },
+              {
+                "paramName": {
+                  "value": "FileId"
+                },
+                "paramValue": {
+                  "value": "_FileId",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "value": null,
+            "expression": false
+          },
+          "retryLimit": {
+            "value": null,
+            "expression": false
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "executable_during_suggest": {
+            "value": true
+          },
+          "batchSize": {
+            "value": 1
+          },
+          "poolSize": {
+            "value": 1,
+            "expression": false
+          },
+          "loopDocument": {
+            "expression": true
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "28fccde5-77dc-4836-ad31-e509a303b0f7": {
+      "class_fqid": "com-snaplogic-snaps-flow-tail_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-tail",
+      "class_version": 1,
+      "instance_fqid": "28fccde5-77dc-4836-ad31-e509a303b0f7_1",
+      "instance_id": "28fccde5-77dc-4836-ad31-e509a303b0f7",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Tail"
+          }
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "numOfDocs": {
+            "value": 1
+          },
+          "offset": {
+            "value": 0
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "67c34b8f-4f0f-4819-b607-17061e3b3567": {
+      "class_fqid": "com-snaplogic-snaps-flow-pipeexec_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-pipeexec",
+      "class_version": 1,
+      "instance_fqid": "67c34b8f-4f0f-4819-b607-17061e3b3567_1",
+      "instance_id": "67c34b8f-4f0f-4819-b607-17061e3b3567",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "FileUploadEMMEFtpServer"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "timeout": {
+            "value": null,
+            "expression": false
+          },
+          "pipeline": {
+            "expression": false,
+            "value": "UploadFileToEmmeServer"
+          },
+          "execLabel": {
+            "expression": true,
+            "value": null
+          },
+          "params": {
+            "value": [
+              {
+                "paramName": {
+                  "value": "SourceFilePath"
+                },
+                "paramValue": {
+                  "value": "'smb:' + _SourceFTPPath.replace('Archive','') +_FileNameTemp",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "DestinationFtpServer"
+                },
+                "paramValue": {
+                  "value": "_DestinationFTPServer",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "DestinationFtpDirectory"
+                },
+                "paramValue": {
+                  "value": "_DestinationFTPDirectory",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "FileNameXML"
+                },
+                "paramValue": {
+                  "value": "_FileName",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "HUM_MFTBaseUrl"
+                },
+                "paramValue": {
+                  "value": "_HUM_MFTBaseUrl",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "HUM_MFTPath"
+                },
+                "paramValue": {
+                  "value": "_HUM_MFTPath",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "value": null,
+            "expression": false
+          },
+          "retryLimit": {
+            "value": null,
+            "expression": false
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "executable_during_suggest": {
+            "value": true
+          },
+          "batchSize": {
+            "value": 1,
+            "expression": false
+          },
+          "poolSize": {
+            "value": 1,
+            "expression": false
+          },
+          "loopDocument": {
+            "expression": true
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "dd8fe012-17cb-4441-9339-e3b1757353d2": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-storedprocedure_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-storedprocedure",
+      "class_version": 1,
+      "instance_fqid": "dd8fe012-17cb-4441-9339-e3b1757353d2_1",
+      "instance_id": "dd8fe012-17cb-4441-9339-e3b1757353d2",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Update RequestCOunt"
+          },
+          "notes": {}
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "Output Parameter OutputView"
+            }
+          },
+          "output1": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "Result Set Output View"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "parameterValues": {
+            "value": [
+              {
+                "parameterValue": {
+                  "expression": true,
+                  "value": "_FileId"
+                }
+              },
+              {
+                "parameterValue": {
+                  "value": "$original_0.RowCount",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "passThrough": {
+            "value": true
+          },
+          "schemaName": {
+            "value": "\"dbo\"",
+            "expression": false
+          },
+          "storedProcedureName": {
+            "value": "spUpdateMessagingRequestFile",
+            "expression": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "c36cfb90-0b36-4ab8-9769-047a9570e21a": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "c36cfb90-0b36-4ab8-9769-047a9570e21a_1",
+      "instance_id": "c36cfb90-0b36-4ab8-9769-047a9570e21a",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "spGetPatientTakeawaySummaryReport"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "'EXEC dbo.spGetPatientTakeawaySummaryReport'",
+            "expression": true
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "d550646d-1cf2-402d-a979-ea565ebc0a49": {
+      "class_fqid": "com-snaplogic-snaps-transform-csvformatter_3-main12989",
+      "class_id": "com-snaplogic-snaps-transform-csvformatter",
+      "class_version": 3,
+      "instance_fqid": "d550646d-1cf2-402d-a979-ea565ebc0a49_1",
+      "instance_id": "d550646d-1cf2-402d-a979-ea565ebc0a49",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "CSV Formatter"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "escapeChar": {
+            "expression": false,
+            "value": "\\"
+          },
+          "quoteMode": {
+            "value": "NONE"
+          },
+          "quoteCharacter": {
+            "expression": false,
+            "value": "\""
+          },
+          "writeHeader": {
+            "value": true
+          },
+          "userDefinedHeader": {
+            "value": []
+          },
+          "charset": {
+            "value": "UTF-8"
+          },
+          "ignoreEmptyStream": {
+            "value": true
+          },
+          "writeBOM": {
+            "value": false
+          },
+          "delimiter": {
+            "expression": false,
+            "value": "|"
+          },
+          "errorPolicy": {
+            "value": "Default"
+          },
+          "newlineCharacter": {
+            "value": "CR+LF"
+          },
+          "useDefinedHeader": {
+            "value": false
+          },
+          "outputHeader": {
+            "value": [
+              {
+                "targetPath": {
+                  "value": null
+                },
+                "expression": {
+                  "expression": true,
+                  "value": null
+                }
+              }
+            ]
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "binary"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "e98f7298-1f8f-41c9-98d6-c8540d85c783": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-main12989",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "e98f7298-1f8f-41c9-98d6-c8540d85c783_1",
+      "instance_id": "e98f7298-1f8f-41c9-98d6-c8540d85c783",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Mapper"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "nullSafeAccess": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "targetPath": {
+                      "value": "$CountofName"
+                    },
+                    "expression": {
+                      "expression": true,
+                      "value": "$.get(\"\")"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"Name\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$Name"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "'smb:' + _SourceFTPPath.replace('Archive','') + 'PatientTakeawaySummaryReport.txt'",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$SummaryFileFullPath"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af": {
+      "class_fqid": "com-snaplogic-snaps-script-script_2-main18944",
+      "class_id": "com-snaplogic-snaps-script-script",
+      "class_version": 2,
+      "instance_fqid": "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af_1",
+      "instance_id": "1d90eea5-9dd0-4e75-bcb1-58d5bcc285af",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Script"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "language": {
+            "value": "Python"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "editable_content": {
+            "value": "# Import the interface required by the Script snap.\nfrom com.snaplogic.scripting.language import ScriptHook\nfrom com.snaplogic.scripting.language.ScriptHook import *\nimport ftplib\nimport datetime\n\nclass TransformScript(ScriptHook):\n    def __init__(self, input, output, error, log):\n        self.input = input\n        self.output = output\n        self.error = error\n        self.log = log\n\n    # The \"execute()\" method is called once when the pipeline is started\n    # and allowed to process its inputs or just send data to its outputs.\n    def execute(self):\n        self.log.info(\"Executing Transform script\")\n        #newarr=[]\n        CountDictionary={}\n        SummaryFileFullPath=''\n        \n\n        while self.input.hasNext():\n            try:\n                # Read the next input document, store it in a new dictionary, and write this as an output document.\n                inDoc = self.input.next()\n                \n                if(inDoc['Name']=='TakeawayProcessed'):\n                    CountDictionary['TakeawayProcessed']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawaySent'):\n                    CountDictionary['TakeawaySent']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawayErrors'):\n                    CountDictionary['TakeawayErrors']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawayEnglish'):\n                    CountDictionary['TakeawayEnglish']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawaySpanish'):\n                    CountDictionary['TakeawaySpanish']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawayEnglishRepresentative'):\n                    CountDictionary['TakeawayEnglishRepresentative']=inDoc[\"CountofName\"]\n                elif(inDoc['Name']=='TakeawaySpanishRepresentative'):\n                    CountDictionary['TakeawaySpanishRepresentative']=inDoc[\"CountofName\"]\n                SummaryFileFullPath=inDoc[\"SummaryFileFullPath\"]\n                \n                \n                \n            except Exception as e:\n                errDoc = {\n                    'error' : str(e)\n                }\n                self.log.error(\"Error in python script\")\n                self.error.write(errDoc)\n        outDoc = {\n                'CountDictionary' : CountDictionary,\n                'SummaryFileFullPath':SummaryFileFullPath\n                }\n        \n        self.output.write(outDoc)\n    # The \"cleanup()\" method is called after the snap has exited the execute() method\n    def cleanup(self):\n        self.log.info(\"Cleaning up\")\n\n# The Script Snap will look for a ScriptHook object in the \"hook\"\n# variable.  The snap will then call the hook's \"execute\" method.\nhook = TransformScript(input, output, error, log)"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "script": {
+            "expression": false,
+            "value": null
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main18944"
+    },
+    "ecfa7cbe-b661-42f4-8841-24b07003a70b": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "ecfa7cbe-b661-42f4-8841-24b07003a70b_1",
+      "instance_id": "ecfa7cbe-b661-42f4-8841-24b07003a70b",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get PatientTakeaway Statistics"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "EXEC dbo.spGetPatientTakeawayStatistics",
+            "expression": false
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "bec970b5-e973-4663-946c-2e162812cd4f": {
+      "class_fqid": "com-snaplogic-snaps-email-emailsender_2-main12833",
+      "class_id": "com-snaplogic-snaps-email-emailsender",
+      "class_version": 2,
+      "instance_fqid": "bec970b5-e973-4663-946c-2e162812cd4f_1",
+      "instance_id": "bec970b5-e973-4663-946c-2e162812cd4f",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Email Sender"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'EmailAccount' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'EmailAccountQA' : 'EmailAccountPROD')",
+            "expression": true
+          }
+        },
+        "input": {
+          "input101": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "cc": {
+            "expression": false,
+            "value": null
+          },
+          "bcc": {
+            "expression": false,
+            "value": null
+          },
+          "body": {
+            "expression": true,
+            "value": "\n  '<html> \n<head> \n     <title>Email Snap HTML Table</title> \n<style type=\"text/css\"> table.hovertable {font-family: verdana,arial,sans-serif;font-size:11px;color:#333333;border-width: 1px;border-color: #999999;border-collapse: separate;}table.hovertable th {background-color:#00B140 ;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9c6c9;}table.hovertable tr{background-color:#d4e3e5;}table.hovertable td {border-width: 1px;padding: 8px;border-style: solid;border-color: #00B140 ;margin-top: 10px;}\n           \n</style>\n\n</head> \n<body> ' +\n'<b>Patient Takeaway EMME Request Breakdown : </b><br/><br/>' + \n\n\n '<table class=\"hovertable\"> \n<tr>\n    <th>Description</th>\n    <th>Record Count</th>\n  \n  </tr>\n  <tr>\n    <td>Total Takeaways Processed </td>\n <td>'+ $CountDictionary.TakeawayProcessed + '</td>\n    \n      </tr>\n\n  <tr>\n    <td>Takeaways Sent</td>\n <td>'+ $CountDictionary.TakeawaySent+ '</td>\n    \n      </tr>\n<tr>\n    <td>Takeaway Error </td>\n <td>'+ $CountDictionary.TakeawayErrors + '</td>\n    \n      </tr>\n<tr>\n    <td>Patient Takeaways Sent in English</td>\n <td>'+ $CountDictionary.TakeawayEnglish + '</td>\n    \n      </tr>\n<tr>\n    <td>Patient Takeaways Sent in Spanish</td>\n <td>'+ $CountDictionary.TakeawaySpanish + '</td>\n    \n      </tr>\n<tr>\n    <td>Representative Takeaway English  </td>\n <td>'+ $CountDictionary.TakeawayEnglishRepresentative + '</td>\n    \n      </tr>\n<tr>\n    <td>Representative Takeaway Spanish  </td>\n <td>'+ $CountDictionary.TakeawaySpanishRepresentative + '</td>\n    \n      </tr>\n        </table> \n\t\t<br/><br/>'+ '\n\t\t\n <br><font size=3> This is a system generated email. Please do not Reply.</font></p>\n             <b><font size=3> Inspire IT System Notification</font></p>\n</body> \n</html>'"
+          },
+          "retries": {
+            "value": 3
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "from": {
+            "expression": true,
+            "value": "'Inspire'+_EnvironmentValue +'@humana.com'"
+          },
+          "subject": {
+            "expression": false,
+            "value": "Inspire Patient Takeaway EMME Export Summary"
+          },
+          "attachments": {
+            "value": [
+              {
+                "url": {
+                  "value": "'smb://'+_DFSUserName+'@'+$SummaryFileFullPath.slice(6)",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "passThrough": {
+            "value": false
+          },
+          "emailType": {
+            "value": "HTML text"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "batchSize": {
+            "value": 100
+          },
+          "to": {
+            "expression": true,
+            "value": "_EmailInfo.replaceAll(';',',')"
+          },
+          "tableDataPath": {
+            "value": "$"
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72_1",
+      "instance_id": "2c0b583e-0f1b-48bd-97d3-c0e0981b6f72",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get Patient Takeaway Error Count"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "'EXEC dbo.spGetPatientTakeawayErrorCount'",
+            "expression": true
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-storedprocedure_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-storedprocedure",
+      "class_version": 1,
+      "instance_fqid": "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe_1",
+      "instance_id": "3c9396b1-6eeb-4b6c-b611-dd13be6a74fe",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get ErrorReport"
+          },
+          "notes": {}
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "Output Parameter OutputView"
+            }
+          },
+          "output1": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "Result Set Output View"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "parameterValues": {
+            "value": [
+              {
+                "parameterValue": {
+                  "value": "_FileId",
+                  "expression": true
+                }
+              },
+              {
+                "parameterValue": {
+                  "value": "_MessageId",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "passThrough": {
+            "value": false
+          },
+          "schemaName": {
+            "value": "\"dbo\"",
+            "expression": false
+          },
+          "storedProcedureName": {
+            "value": "spGetMessagingErrorReport",
+            "expression": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "bd922108-5085-4318-a164-2a35d7ea8c01": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-431patches19441",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "bd922108-5085-4318-a164-2a35d7ea8c01_1",
+      "instance_id": "bd922108-5085-4318-a164-2a35d7ea8c01",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Errorreportmapper"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "nullSafeAccess": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "targetPath": {
+                      "value": "$ErrorId"
+                    },
+                    "expression": {
+                      "expression": true,
+                      "value": "$.get(\"ErrorId\")"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"MessageId\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$MessageId"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"FileId\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$FileId"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"QueueId\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$QueueId"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"ConsultId\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$ConsultId"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"Description\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$Description"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "$.get(\"ErrorDate\")",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$ErrorDate"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "431patches19441"
+    },
+    "48c052fc-b9fa-4d75-a76b-c247714d5e30": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-main12989",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "48c052fc-b9fa-4d75-a76b-c247714d5e30_1",
+      "instance_id": "48c052fc-b9fa-4d75-a76b-c247714d5e30",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "ErrorCount"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "nullSafeAccess": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "targetPath": {
+                      "value": "$ErrorCount"
+                    },
+                    "expression": {
+                      "expression": true,
+                      "value": "$.get(\"\")"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "661a5d2d-b5f6-4f1f-9892-f57062452d64": {
+      "class_fqid": "com-snaplogic-snaps-flow-router_2-main14627",
+      "class_id": "com-snaplogic-snaps-flow-router",
+      "class_version": 2,
+      "instance_fqid": "661a5d2d-b5f6-4f1f-9892-f57062452d64_1",
+      "instance_id": "661a5d2d-b5f6-4f1f-9892-f57062452d64",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Router"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "routes": {
+            "value": [
+              {
+                "expression": {
+                  "expression": true,
+                  "value": "true"
+                },
+                "outputViewName": {
+                  "value": "output0"
+                }
+              },
+              {
+                "expression": {
+                  "expression": true,
+                  "value": "$ErrorCount>0"
+                },
+                "outputViewName": {
+                  "value": "output1"
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "firstMatch": {
+            "value": false
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "output1": {
+            "label": {
+              "value": "output1"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main14627"
+    },
+    "5d224f36-2913-4eab-a300-9a47a1adf6ec": {
+      "class_fqid": "com-snaplogic-snaps-transform-csvformatter_3-431patches19441",
+      "class_id": "com-snaplogic-snaps-transform-csvformatter",
+      "class_version": 3,
+      "instance_fqid": "5d224f36-2913-4eab-a300-9a47a1adf6ec_1",
+      "instance_id": "5d224f36-2913-4eab-a300-9a47a1adf6ec",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "CSV Formatter"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "binary"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "writeBOM": {
+            "value": false
+          },
+          "delimiter": {
+            "expression": false,
+            "value": "|"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "userDefinedHeader": {
+            "value": []
+          },
+          "charset": {
+            "value": "UTF-8"
+          },
+          "writeHeader": {
+            "value": true
+          },
+          "quoteCharacter": {
+            "value": "\"",
+            "expression": false
+          },
+          "outputHeader": {
+            "value": []
+          },
+          "useDefinedHeader": {
+            "value": false
+          },
+          "newlineCharacter": {
+            "value": "CR+LF"
+          },
+          "escapeChar": {
+            "value": "\\",
+            "expression": false
+          },
+          "errorPolicy": {
+            "value": "Default"
+          },
+          "ignoreEmptyStream": {
+            "value": true
+          },
+          "quoteMode": {
+            "value": "NONE"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "431patches19441"
+    },
+    "f0eefc59-aab0-4a60-a029-33fff6f54ea1": {
+      "class_fqid": "com-snaplogic-snaps-binary-write_3-main19844",
+      "class_id": "com-snaplogic-snaps-binary-write",
+      "class_version": 3,
+      "instance_fqid": "f0eefc59-aab0-4a60-a029-33fff6f54ea1_1",
+      "instance_id": "f0eefc59-aab0-4a60-a029-33fff6f54ea1",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Write Error Report"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "flushIntervalKb": {
+            "value": -1
+          },
+          "UserPermissionsKey": {
+            "value": []
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "cannedAcls": {
+            "value": "None"
+          },
+          "filename": {
+            "value": "_HUM_MFTBaseUrl + _HUM_MFTPath + 'PatientTakeawayErrorReport.txt'",
+            "expression": true
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "preventURLEncoding": {
+            "value": false
+          },
+          "writeEmptyFile": {
+            "value": false
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "createDir": {
+            "value": false
+          },
+          "fileAction": {
+            "value": "OVERWRITE"
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "validate": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'InspireMFTAccountNPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'InspireMFTAccountNPE' : 'InspireMFTAccountProd')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "output": {
+          "output101": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "4cef65df-281e-4246-8906-1290d800d41c": {
+      "class_fqid": "com-snaplogic-snaps-flow-exit_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-exit",
+      "class_version": 1,
+      "instance_fqid": "4cef65df-281e-4246-8906-1290d800d41c_1",
+      "instance_id": "4cef65df-281e-4246-8906-1290d800d41c",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Exit"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "KeyThresholdLimit": {
+            "value": 1,
+            "expression": false
+          },
+          "KeyErrorMsg": {
+            "value": "Exceeded threshold limit",
+            "expression": false
+          }
+        },
+        "view_serial": 100,
+        "output": {}
+      },
+      "class_build_tag": "main19844"
+    },
+    "81c2e394-ac25-41f8-8427-27ea1865447b": {
+      "class_fqid": "com-snaplogic-snaps-email-emailsender_2-main12833",
+      "class_id": "com-snaplogic-snaps-email-emailsender",
+      "class_version": 2,
+      "instance_fqid": "81c2e394-ac25-41f8-8427-27ea1865447b_1",
+      "instance_id": "81c2e394-ac25-41f8-8427-27ea1865447b",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Email Error Report"
+          }
+        },
+        "view_serial": 102,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'EmailAccount' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'EmailAccountQA' : 'EmailAccountPROD')"
+          }
+        },
+        "settings": {
+          "cc": {
+            "expression": false,
+            "value": null
+          },
+          "bcc": {
+            "expression": false,
+            "value": null
+          },
+          "body": {
+            "expression": false,
+            "value": "Attached are Inspire Patient Takeaway Queue validation errors found after the regularly scheduled Inspire Patient Takeaway EMME Export execution.  These errors need to be researched immediately and pushed to EMME as soon as possible.  Otherwise, Humana is at risk of an CMS MTM program compliance breach.\n\n\nDatabase :: Rx_Inspire\n\nError Log Table :: dbo.MessagingErrors"
+          },
+          "retries": {
+            "value": 3
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "from": {
+            "expression": true,
+            "value": "'Inspire'+_EnvironmentValue +'@humana.com'"
+          },
+          "subject": {
+            "expression": false,
+            "value": "ACTION REQUIRED :: Inspire Patient Takeaway EMME Export"
+          },
+          "attachments": {
+            "value": [
+              {
+                "url": {
+                  "expression": true,
+                  "value": "'smb://'+_DFSUserName+'@'+$filename.slice(6)"
+                }
+              }
+            ]
+          },
+          "passThrough": {
+            "value": false
+          },
+          "emailType": {
+            "value": "Plain text"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "batchSize": {
+            "value": 100
+          },
+          "to": {
+            "expression": true,
+            "value": "_ErrorMailingList.replaceAll(';',',')"
+          },
+          "tableDataPath": {
+            "value": null
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "8f42ae43-ccb4-47cb-af03-0367777337b0": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "8f42ae43-ccb4-47cb-af03-0367777337b0_1",
+      "instance_id": "8f42ae43-ccb4-47cb-af03-0367777337b0",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Update Consults To Complete"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "EXEC dbo.spUpdatePatientTakeawayConsultsToComplete",
+            "expression": false
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "998a1a99-45c1-4656-843e-a71cb483aa6f": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main19844",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "998a1a99-45c1-4656-843e-a71cb483aa6f_1",
+      "instance_id": "998a1a99-45c1-4656-843e-a71cb483aa6f",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Move Queue to Log table"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "EXEC dbo.spInsertPatientTakeawayToLog",
+            "expression": false
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "949a8ece-f29a-41ec-9822-8075617c0b7e": {
+      "class_fqid": "com-snaplogic-snaps-flow-pipeexec_1-main12833",
+      "class_id": "com-snaplogic-snaps-flow-pipeexec",
+      "class_version": 1,
+      "instance_fqid": "949a8ece-f29a-41ec-9822-8075617c0b7e_1",
+      "instance_id": "949a8ece-f29a-41ec-9822-8075617c0b7e",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Archive files"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "timeout": {
+            "expression": false,
+            "value": null
+          },
+          "pipeline": {
+            "expression": false,
+            "value": "Archive_Files"
+          },
+          "execLabel": {
+            "expression": true,
+            "value": null
+          },
+          "params": {
+            "value": [
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_FileName"
+                },
+                "paramName": {
+                  "value": "FileName"
+                }
+              },
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_SourceFTPPath"
+                },
+                "paramName": {
+                  "value": "SourceFTPDirectory"
+                }
+              },
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_ProcessName"
+                },
+                "paramName": {
+                  "value": "ProcessName"
+                }
+              },
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_EnvironmentValue"
+                },
+                "paramName": {
+                  "value": "EnvironmentValue"
+                }
+              },
+              {
+                "paramValue": {
+                  "expression": true,
+                  "value": "_FTPUserName"
+                },
+                "paramName": {
+                  "value": "FTPUserName"
+                }
+              },
+              {
+                "paramName": {
+                  "value": "FileId"
+                },
+                "paramValue": {
+                  "value": "_FileId",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "FileNameTemp"
+                },
+                "paramValue": {
+                  "value": "_FileNameTemp",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "DestinationFTPServer"
+                },
+                "paramValue": {
+                  "value": "_DestinationFTPServer",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "DestinationFTPPath"
+                },
+                "paramValue": {
+                  "value": "_DestinationFTPDirectory",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "EmailInfo"
+                },
+                "paramValue": {
+                  "value": "_EmailInfo",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "expression": false,
+            "value": null
+          },
+          "retryLimit": {
+            "expression": false,
+            "value": null
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "executable_during_suggest": {
+            "value": true
+          },
+          "batchSize": {
+            "value": 1,
+            "expression": false
+          },
+          "poolSize": {
+            "expression": false,
+            "value": 1
+          },
+          "loopDocument": {
+            "expression": true
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "1038b888-7d3f-4d4e-a0c0-b20c8bc1007e": {
+      "class_fqid": "com-snaplogic-snaps-flow-exit_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-exit",
+      "class_version": 1,
+      "instance_fqid": "1038b888-7d3f-4d4e-a0c0-b20c8bc1007e_1",
+      "instance_id": "1038b888-7d3f-4d4e-a0c0-b20c8bc1007e",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Exit"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "KeyThresholdLimit": {
+            "value": 1,
+            "expression": false
+          },
+          "KeyErrorMsg": {
+            "value": "Exceeded threshold limit",
+            "expression": false
+          }
+        },
+        "view_serial": 100,
+        "output": {}
+      },
+      "class_build_tag": "main19844"
+    },
+    "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee": {
+      "class_fqid": "com-snaplogic-snaps-flow-tail_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-tail",
+      "class_version": 1,
+      "instance_fqid": "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee_1",
+      "instance_id": "aa0fbc4c-8ffb-4597-8b74-a3bfe3f920ee",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Tail"
+          }
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "numOfDocs": {
+            "value": 1
+          },
+          "offset": {
+            "value": 0
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "f4c77204-19b7-4fde-bfe7-669aba74e879": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-storedprocedure_1-main12833",
+      "class_id": "com-snaplogic-snaps-sqlserver-storedprocedure",
+      "class_version": 1,
+      "instance_fqid": "f4c77204-19b7-4fde-bfe7-669aba74e879_1",
+      "instance_id": "f4c77204-19b7-4fde-bfe7-669aba74e879",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "UpdateInspireProcessSchedule"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')"
+          }
+        },
+        "input": {
+          "input101": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "parameterValues": {
+            "value": [
+              {
+                "parameterValue": {
+                  "expression": true,
+                  "value": "_ProcessName"
+                }
+              }
+            ]
+          },
+          "passThrough": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "storedProcedureName": {
+            "expression": false,
+            "value": "UpdateInspireProcessSchedule"
+          },
+          "schemaName": {
+            "expression": false,
+            "value": "\"dbo\""
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "Output Parameter OutputView"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "output1": {
+            "label": {
+              "value": "Result Set Output View"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "3631ca9f-11f4-4489-ac0d-2af3357943cc": {
+      "class_fqid": "com-snaplogic-snaps-flow-exit_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-exit",
+      "class_version": 1,
+      "instance_fqid": "3631ca9f-11f4-4489-ac0d-2af3357943cc_1",
+      "instance_id": "3631ca9f-11f4-4489-ac0d-2af3357943cc",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Exit"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "KeyThresholdLimit": {
+            "value": 1,
+            "expression": false
+          },
+          "KeyErrorMsg": {
+            "value": "Exceeded threshold limit",
+            "expression": false
+          }
+        },
+        "view_serial": 100,
+        "output": {}
+      },
+      "class_build_tag": "main19844"
+    },
+    "ed7b3574-2371-4082-b500-8ace0ee8b266": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-433patches21119",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "ed7b3574-2371-4082-b500-8ace0ee8b266_1",
+      "instance_id": "ed7b3574-2371-4082-b500-8ace0ee8b266",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get Error Details"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "'select top 5 Description from MessagingErrors WHERE FileId  =' +  _FileId  + 'AND MessageId = ' +  _MessageId ",
+            "expression": true
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "433patches21119"
+    },
+    "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba": {
+      "class_fqid": "com-snaplogic-snaps-script-script_2-main18944",
+      "class_id": "com-snaplogic-snaps-script-script",
+      "class_version": 2,
+      "instance_fqid": "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba_1",
+      "instance_id": "f8a7c1b9-fbee-413d-99e8-09f3b357e2ba",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Script"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "language": {
+            "value": "Python"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "editable_content": {
+            "value": "# Import the interface required by the Script snap.\nfrom com.snaplogic.scripting.language import ScriptHook\nfrom com.snaplogic.scripting.language.ScriptHook import *\nimport ftplib\nimport datetime\n\nclass TransformScript(ScriptHook):\n    def __init__(self, input, output, error, log):\n        self.input = input\n        self.output = output\n        self.error = error\n        self.log = log\n\n    # The \"execute()\" method is called once when the pipeline is started\n    # and allowed to process its inputs or just send data to its outputs.\n    def execute(self):\n        self.log.info(\"Executing Transform script\")\n        newarr=[]\n        a=0\n        \n\n        while self.input.hasNext():\n            try:\n                # Read the next input document, store it in a new dictionary, and write this as an output document.\n                inDoc = self.input.next()\n                newarr.append(inDoc['Description'])\n                a=1\n                #Destination_ftp.quit()\n                \n                \n            except Exception as e:\n                errDoc = {\n                    'error' : str(e)\n                }\n                self.log.error(\"Error in python script\")\n                self.error.write(errDoc)\n            # if(a==1):\n            #     outDoc = {\n            #     'original' : newarr,\n            #     'files' : newarr\n            #     }\n            #     self.output.write( outDoc)\n        if(a==1):\n            outDoc = {\n                'Description' : newarr\n                }\n            self.output.write( outDoc)   \n        self.log.info(\"Script executed\")\n\n    # The \"cleanup()\" method is called after the snap has exited the execute() method\n    def cleanup(self):\n        self.log.info(\"Cleaning up\")\n\n# The Script Snap will look for a ScriptHook object in the \"hook\"\n# variable.  The snap will then call the hook's \"execute\" method.\nhook = TransformScript(input, output, error, log)"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "script": {
+            "expression": false,
+            "value": null
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main18944"
+    },
+    "0707f6f0-39b9-42e1-8355-310ebcf6e515": {
+      "class_fqid": "com-snaplogic-snaps-flow-union_2-432patches20279",
+      "class_id": "com-snaplogic-snaps-flow-union",
+      "class_version": 2,
+      "instance_fqid": "0707f6f0-39b9-42e1-8355-310ebcf6e515_1",
+      "instance_id": "0707f6f0-39b9-42e1-8355-310ebcf6e515",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Union"
+          }
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          },
+          "input1": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input1"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "432patches20279"
+    },
+    "cfba4488-3236-4941-94b1-bc52d3953193": {
+      "class_fqid": "com-snaplogic-snaps-flow-pipeexec_1-main19844",
+      "class_id": "com-snaplogic-snaps-flow-pipeexec",
+      "class_version": 1,
+      "instance_fqid": "cfba4488-3236-4941-94b1-bc52d3953193_1",
+      "instance_id": "cfba4488-3236-4941-94b1-bc52d3953193",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Create SNOW Incident"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "timeout": {
+            "value": null,
+            "expression": false
+          },
+          "pipeline": {
+            "expression": false,
+            "value": "SNOWIncidentCreation"
+          },
+          "execLabel": {
+            "expression": true,
+            "value": null
+          },
+          "params": {
+            "value": [
+              {
+                "paramName": {
+                  "value": "Description"
+                },
+                "paramValue": {
+                  "value": "$Description",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "ShortDescription"
+                },
+                "paramValue": {
+                  "value": "$short_description",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "ServiceNowApiUrl"
+                },
+                "paramValue": {
+                  "value": "_ServiceNowApiUrl",
+                  "expression": true
+                }
+              },
+              {
+                "paramName": {
+                  "value": "Token"
+                },
+                "paramValue": {
+                  "value": "_Token",
+                  "expression": true
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "value": null,
+            "expression": false
+          },
+          "retryLimit": {
+            "value": null,
+            "expression": false
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "executable_during_suggest": {
+            "value": true
+          },
+          "batchSize": {
+            "value": 1,
+            "expression": false
+          },
+          "poolSize": {
+            "value": 1,
+            "expression": false
+          },
+          "loopDocument": {
+            "expression": true
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main19844"
+    },
+    "5287af35-42c3-471f-8051-c078db06fe66": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-431patches19441",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "5287af35-42c3-471f-8051-c078db06fe66_1",
+      "instance_id": "5287af35-42c3-471f-8051-c078db06fe66",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Mapper"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "timeout": {
+            "value": null,
+            "expression": false
+          },
+          "pipeline": {
+            "expression": false
+          },
+          "execLabel": {
+            "value": null,
+            "expression": true
+          },
+          "params": {
+            "value": []
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "expression": {
+                      "expression": true,
+                      "value": "'The following data is displaying Data Error following successful execution of the PatientTakeawayEmmeExportPipeline .  Data must be corrected to avoid compliance risk. \\n\\n ' +'Below are a few examples of Consult records which have failed due to Data Validation errors during scheduled execution.\\n\\n' + $original.Description.join(' \\n\\n ') + '  \\n\\n These errors need to be researched immediately and pushed to EMME as soon as possible.  Otherwise, Humana is at risk of an CMS MTM program compliance breach. \\n Complete information of all errored records could be found at below table \\n\\n  Error Log Table :: dbo.MessagingErrors \\n\\n  Total Error Record Count :' + $ErrorCount"
+                    },
+                    "targetPath": {
+                      "value": "$Description"
+                    }
+                  },
+                  {
+                    "expression": {
+                      "value": "There are some   Data validation errors found after the regularly scheduled Inspire Patient Takeaway EMME Export process execution",
+                      "expression": false
+                    },
+                    "targetPath": {
+                      "value": "$short_description"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          },
+          "snaplexGovernor": {
+            "value": "SNAPLEX_WITH_PATH"
+          },
+          "retryInterval": {
+            "value": null,
+            "expression": false
+          },
+          "retryLimit": {
+            "value": null,
+            "expression": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "reuse": {
+            "value": false
+          },
+          "snaplex": {
+            "expression": false
+          },
+          "nullSafeAccess": {
+            "value": false
+          },
+          "batchSize": {
+            "value": 1
+          },
+          "poolSize": {
+            "value": 1,
+            "expression": false
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "431patches19441"
+    },
+    "d93f9e9c-b4d5-4925-92b3-444248598bbb": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-433patches21119",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "d93f9e9c-b4d5-4925-92b3-444248598bbb_1",
+      "instance_id": "d93f9e9c-b4d5-4925-92b3-444248598bbb",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Get Error Details"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "passThrough": {
+            "value": true
+          },
+          "maxRetryProp": {
+            "value": 0,
+            "expression": false
+          },
+          "retryIntervalProp": {
+            "value": 1,
+            "expression": false
+          },
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "sqlStatement": {
+            "value": "Select (select Count(*) from PatientTakeawayQueue  where QueueStatus='Error')  + \n(select Count(*) from PatientTakeawayQueueRepresentative  where QueueStatus='Error') As ErrorCount",
+            "expression": false
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "433patches21119"
+    },
+    "60f30282-fb63-4093-83f5-f666adc09883": {
+      "class_fqid": "com-snaplogic-snaps-binary-write_3-main19844",
+      "class_id": "com-snaplogic-snaps-binary-write",
+      "class_version": 3,
+      "instance_fqid": "60f30282-fb63-4093-83f5-f666adc09883_1",
+      "instance_id": "60f30282-fb63-4093-83f5-f666adc09883",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "SummaryReport File Writer"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "flushIntervalKb": {
+            "value": -1
+          },
+          "UserPermissionsKey": {
+            "value": []
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "cannedAcls": {
+            "value": "None"
+          },
+          "filename": {
+            "value": "_HUM_MFTBaseUrl + _HUM_MFTPath + 'PatientTakeawaySummaryReport.txt'",
+            "expression": true
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "preventURLEncoding": {
+            "value": false
+          },
+          "writeEmptyFile": {
+            "value": false
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "createDir": {
+            "value": false
+          },
+          "fileAction": {
+            "value": "OVERWRITE"
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "validate": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'InspireMFTAccountNPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'InspireMFTAccountNPE' : 'InspireMFTAccountProd')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "output": {
+          "output101": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main19844"
+    },
+    "d0903af1-6b04-4a4c-8305-28671b17dff3": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-main12989",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "d0903af1-6b04-4a4c-8305-28671b17dff3_1",
+      "instance_id": "d0903af1-6b04-4a4c-8305-28671b17dff3",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Mapper"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "flushIntervalKb": {
+            "value": -1
+          },
+          "UserPermissionsKey": {
+            "value": []
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "cannedAcls": {
+            "value": "None"
+          },
+          "filename": {
+            "value": null,
+            "expression": false
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "expression": {
+                      "value": "'smb:' + _SourceFTPPath.replace('Archive/','') + 'PatientTakeawayErrorReport.txt'",
+                      "expression": true
+                    },
+                    "targetPath": {
+                      "value": "$filename"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          },
+          "preventURLEncoding": {
+            "value": false
+          },
+          "writeEmptyFile": {
+            "value": false
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "createDir": {
+            "value": false
+          },
+          "fileAction": {
+            "value": "OVERWRITE"
+          },
+          "passThrough": {
+            "value": false
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "validate": {
+            "value": false
+          },
+          "nullSafeAccess": {
+            "value": false
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "a6c109d6-b933-477b-be01-ec54fc535c3c": {
+      "class_fqid": "com-snaplogic-snaps-script-script_2-main22460",
+      "class_id": "com-snaplogic-snaps-script-script",
+      "class_version": 2,
+      "instance_fqid": "a6c109d6-b933-477b-be01-ec54fc535c3c_1",
+      "instance_id": "a6c109d6-b933-477b-be01-ec54fc535c3c",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": " Script for Delaying Read operation"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "language": {
+            "value": "Python"
+          },
+          "script": {
+            "value": null,
+            "expression": false
+          },
+          "editable_content": {
+            "value": "# Import the interface required by the Script snap.\nfrom com.snaplogic.scripting.language import ScriptHook\nimport time\nclass TransformScript(ScriptHook):\n    def __init__(self, input, output, error, log):\n        self.input = input\n        self.output = output\n        self.error = error\n        self.log = log\n\n    # The \"execute()\" method is called once when the pipeline is started\n    # and allowed to process its inputs or just send data to its outputs.\n    def execute(self):\n        self.log.info(\"Executing Transform script\")\n        while self.input.hasNext():\n            try:\n                # Read the next input document, store it in a new dictionary, and write this as an output document.\n                inDoc = self.input.next()\n                time.sleep(60)\n                outDoc = inDoc\n                self.output.write(inDoc, outDoc)\n            except Exception as e:\n                errDoc = {\n                    'error' : str(e)\n                }\n                self.log.error(\"Error in python script\")\n                self.error.write(errDoc)\n\n        self.log.info(\"Script executed\")\n\n    # The \"cleanup()\" method is called after the snap has exited the execute() method\n    def cleanup(self):\n        self.log.info(\"Cleaning up\")\n\n# The Script Snap will look for a ScriptHook object in the \"hook\"\n# variable.  The snap will then call the hook's \"execute\" method.\nhook = TransformScript(input, output, error, log)"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main22460"
+    },
+    "99d156aa-aad2-4897-98d0-3e0b0dc9d514": {
+      "class_fqid": "com-snaplogic-snaps-script-script_2-main22460",
+      "class_id": "com-snaplogic-snaps-script-script",
+      "class_version": 2,
+      "instance_fqid": "99d156aa-aad2-4897-98d0-3e0b0dc9d514_1",
+      "instance_id": "99d156aa-aad2-4897-98d0-3e0b0dc9d514",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": " Script for Delaying Read operation"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "language": {
+            "value": "Python"
+          },
+          "script": {
+            "value": null,
+            "expression": false
+          },
+          "editable_content": {
+            "value": "# Import the interface required by the Script snap.\nfrom com.snaplogic.scripting.language import ScriptHook\nimport time\nclass TransformScript(ScriptHook):\n    def __init__(self, input, output, error, log):\n        self.input = input\n        self.output = output\n        self.error = error\n        self.log = log\n\n    # The \"execute()\" method is called once when the pipeline is started\n    # and allowed to process its inputs or just send data to its outputs.\n    def execute(self):\n        self.log.info(\"Executing Transform script\")\n        while self.input.hasNext():\n            try:\n                # Read the next input document, store it in a new dictionary, and write this as an output document.\n                inDoc = self.input.next()\n                time.sleep(30)\n                outDoc = inDoc\n                self.output.write(inDoc, outDoc)\n            except Exception as e:\n                errDoc = {\n                    'error' : str(e)\n                }\n                self.log.error(\"Error in python script\")\n                self.error.write(errDoc)\n\n        self.log.info(\"Script executed\")\n\n    # The \"cleanup()\" method is called after the snap has exited the execute() method\n    def cleanup(self):\n        self.log.info(\"Cleaning up\")\n\n# The Script Snap will look for a ScriptHook object in the \"hook\"\n# variable.  The snap will then call the hook's \"execute\" method.\nhook = TransformScript(input, output, error, log)"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main22460"
+    },
+    "503dfc68-dd46-4525-b693-93460d2cd745": {
+      "class_fqid": "com-snaplogic-snaps-script-script_2-main22460",
+      "class_id": "com-snaplogic-snaps-script-script",
+      "class_version": 2,
+      "instance_fqid": "503dfc68-dd46-4525-b693-93460d2cd745_1",
+      "instance_id": "503dfc68-dd46-4525-b693-93460d2cd745",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": " Script for Delaying Read operation"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "language": {
+            "value": "Python"
+          },
+          "script": {
+            "value": null,
+            "expression": false
+          },
+          "editable_content": {
+            "value": "# Import the interface required by the Script snap.\nfrom com.snaplogic.scripting.language import ScriptHook\nimport time\nclass TransformScript(ScriptHook):\n    def __init__(self, input, output, error, log):\n        self.input = input\n        self.output = output\n        self.error = error\n        self.log = log\n\n    # The \"execute()\" method is called once when the pipeline is started\n    # and allowed to process its inputs or just send data to its outputs.\n    def execute(self):\n        self.log.info(\"Executing Transform script\")\n        while self.input.hasNext():\n            try:\n                # Read the next input document, store it in a new dictionary, and write this as an output document.\n                inDoc = self.input.next()\n                time.sleep(30)\n                outDoc = inDoc\n                self.output.write(inDoc, outDoc)\n            except Exception as e:\n                errDoc = {\n                    'error' : str(e)\n                }\n                self.log.error(\"Error in python script\")\n                self.error.write(errDoc)\n\n        self.log.info(\"Script executed\")\n\n    # The \"cleanup()\" method is called after the snap has exited the execute() method\n    def cleanup(self):\n        self.log.info(\"Cleaning up\")\n\n# The Script Snap will look for a ScriptHook object in the \"hook\"\n# variable.  The snap will then call the hook's \"execute\" method.\nhook = TransformScript(input, output, error, log)"
+          }
+        },
+        "view_serial": 100
+      },
+      "class_build_tag": "main22460"
+    }
+  },
+  "path_id": "/HumanaQA/Pharmacy_Benefit_Management/Inspire_PatientTakeawayEmmeExport",
+  "path_snode": "64d6214cbdf14e36d13ef6e9"
+}

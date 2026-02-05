@@ -1,0 +1,68 @@
+{
+  "info": {
+    "title": "Complex Orchestration Pipeline",
+    "id": "orchestration_123"
+  },
+  "snaps": [
+    {
+      "instance_id": "snap_start",
+      "class_id": "com.snaplogic.snaps.sqlserver.StoredProcedure",
+      "name": "Execute SP_GetOrders",
+      "view": { "x": 50, "y": 50 },
+      "settings": {
+        "procedureName": "SP_GetOrders",
+        "schema": "dbo"
+      }
+    },
+    {
+      "instance_id": "snap_router",
+      "class_id": "com.snaplogic.snaps.flow.Router",
+      "name": "Check Status",
+      "view": { "x": 200, "y": 50 },
+      "settings": {
+        "routes": [
+          {"expression": "$status == 'Failed'"},
+          {"expression": "$status == 'Success'"}
+        ]
+      }
+    },
+    {
+      "instance_id": "snap_email",
+      "class_id": "com.snaplogic.snaps.flow.Email",
+      "name": "Send Failure Email",
+      "view": { "x": 350, "y": 100 },
+      "settings": {
+        "to": "admin@company.com",
+        "subject": "Pipeline Failed",
+        "bodyType": "HTML"
+      }
+    },
+    {
+      "instance_id": "snap_pipe_exec",
+      "class_id": "com.snaplogic.snaps.flow.PipeExec",
+      "name": "Run Downstream Process",
+      "view": { "x": 350, "y": 0 },
+      "settings": {
+        "pipeline": "projects/ETL/Process_Orders",
+        "timeout": 300
+      }
+    }
+  ],
+  "links": [
+    {
+      "from_snap": "snap_start",
+      "to_snap": "snap_router",
+      "view": {}
+    },
+    {
+      "from_snap": "snap_router",
+      "to_snap": "snap_email",
+      "view": {}
+    },
+    {
+      "from_snap": "snap_router",
+      "to_snap": "snap_pipe_exec",
+      "view": {}
+    }
+  ]
+}

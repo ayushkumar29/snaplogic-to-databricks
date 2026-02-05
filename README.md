@@ -1,88 +1,46 @@
 # SnapLogic to Databricks Converter
 
-A web-based tool that converts SnapLogic pipelines (.slp files) into Databricks PySpark code, with AI assistance for complex transformations.
+A robust utility for converting SnapLogic pipelines (`.slp` or `.json`) into Databricks PySpark notebooks. This tool prioritizes enterprise security, validation, and automated batch processing.
 
-## Features
+## Key Features
 
-- Multi-format SLP parsing for various SnapLogic export formats
-- Dependency graph resolution for parent/child pipeline relationships
-- Built-in converters for 40+ common snap types
-- AI-powered conversion for unknown snaps (OpenAI, Anthropic, Groq, Ollama)
-- Modern drag-and-drop interface with syntax highlighting
-- AI chat assistant for conversion questions
+- **Batch Processing:** Automatically processes multiple pipeline files at once.
+- **Intelligent Validation:** Detects and segregates invalid or "junk" files.
+- **Security Guardrails:** Replaces hardcoded credentials with Databricks Secrets.
+- **Sanitization:** Strips GUI metadata to optimize processing.
+- **Enterprise Ready:** Adds error handling, logging, and validation checks to generated code.
 
-## Quick Start
+## Directory Structure
 
-### 1. Install Dependencies
-
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
-### 2. Configure API Key (Optional - for AI features)
-
-```bash
-cp .env.example .env
-# Edit .env and add your API key
-# GROQ_API_KEY=your_key (recommended - free)
-# OPENAI_API_KEY=your_key
-# ANTHROPIC_API_KEY=your_key
-```
-
-### 3. Run the Server
-
-```bash
-cd backend
-python main.py
-```
-
-### 4. Open the Web UI
-
-Navigate to: **http://localhost:8000**
+- **`input_pipelines/`**: Drop your `.slp` or `.json` files here.
+- **`result/`**: Contains the generated Databricks PySpark notebooks (`.py`).
+- **`junk/`**: Invalid or corrupt files are automatically moved here.
+- **`process_uploads.py`**: The main script for batch processing.
+- **`convert_to_databricks.py`**: Core logic for LLM-based code generation.
+- **`sanitize_pipeline.py`**: Utility to clean SnapLogic metadata.
 
 ## Usage
 
-1. **Upload** - Drag and drop your `.slp` files into the upload zone
-2. **Review** - Check for any missing child pipeline dependencies
-3. **Convert** - Click "Convert to Databricks" to generate PySpark code
-4. **Download** - Copy or download your converted code
-
-## Project Structure
-
+### 1. Setup
+Ensure you have Python installed and the required dependencies:
+```bash
+pip install requests
 ```
-snaplogic-to-databricks/
-├── backend/
-│   ├── app/
-│   │   ├── api/              # FastAPI routes
-│   │   ├── engine/           # Core conversion logic
-│   │   │   ├── parser.py     # SLP file parser
-│   │   │   ├── graph.py      # Dependency resolver
-│   │   │   └── generator.py  # PySpark generator
-│   │   └── llm/              # AI integration
-│   │       └── agent.py      # LLM client
-│   ├── static/               # Frontend files
-│   ├── main.py               # FastAPI app
-│   └── requirements.txt
-└── data/                     # Sample files & uploads
-```
+*(Make sure you have a local LLM running, e.g., Ollama, if utilizing the LLM conversion features.)*
 
-## Supported Snap Types
+### 2. Run Batch Processor
+1.  Place your SnapLogic export files in the `input_pipelines` folder.
+2.  Run the processor script:
+    ```bash
+    python process_uploads.py
+    ```
 
-| Category | Snaps |
-|----------|-------|
-| Read | CSV, JSON, Parquet, XML, JDBC, S3, Azure Blob |
-| Write | CSV, JSON, Parquet, JDBC, S3, Azure Blob |
-| Transform | Mapper, Filter, Sort, Aggregate, Join, Union |
-| Flow | Pipeline Execute, Router, Gate, Merge |
+### 3. Review Output
+- **Success:** Check `result/` for your converted Python scripts.
+- **Failures:** Check console output for errors. Invalid files will be in `junk/`.
 
-## AI Features
-
-When the converter encounters an unknown snap type:
-1. It marks the snap for AI resolution
-2. The AI assistant generates equivalent PySpark code
-3. You can ask follow-up questions in the chat panel
-
-## License
-
-MIT
+## Generated Code Features
+The converted notebooks include:
+- **Global Error Handling:** `try/except` blocks around each Snap's logic.
+- **Validation:** Checks for empty DataFrames before write operations.
+- **Secrets Management:** `dbutils.secrets.get` allows for secure credential retrieval.
