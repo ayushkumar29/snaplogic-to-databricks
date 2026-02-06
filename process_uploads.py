@@ -4,6 +4,7 @@ import shutil
 import glob
 from sanitize_pipeline import sanitize_snaplogic_pipeline
 from convert_to_databricks import convert_to_databricks
+from py_to_ipynb import py_to_ipynb
 
 # Configuration
 INPUT_DIR = "input_pipelines"
@@ -71,7 +72,16 @@ def process_file(filepath):
             
             convert_to_databricks(temp_sanitized_path, output_path=output_path)
             
+            # Step C: Convert to Notebook (.ipynb)
+            with open(output_path, 'r', encoding='utf-8') as f:
+                py_content = f.read()
+            
+            ipynb_filename = f"{base_name}_databricks.ipynb"
+            ipynb_path = os.path.join(RESULT_DIR, ipynb_filename)
+            py_to_ipynb(py_content, ipynb_path)
+
             print(f"  [SUCCESS] - Converted to {output_path}")
+            print(f"  [SUCCESS] - Notebook saved to {ipynb_path}")
             
         except Exception as e:
             print(f"  [ERROR] - Failed during conversion: {e}")

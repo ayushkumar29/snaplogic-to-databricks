@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment & Config
+.env
+config.json
+
+# Generated Output
+result/
+converted_output/
+*_databricks.py
+*_databricks.ipynb
+*_sanitized.json
+
+# Input Buffers/Logs
+*.log
+EmmeRequestXMLFileGeneration.txt
+*.tmp
+
+# Junk / Archive
+junk/
+input_pipelines/

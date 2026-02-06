@@ -1,46 +1,73 @@
-# SnapLogic to Databricks Converter
+# SnapLogic to Databricks Converter 🚀
 
-A robust utility for converting SnapLogic pipelines (`.slp` or `.json`) into Databricks PySpark notebooks. This tool prioritizes enterprise security, validation, and automated batch processing.
+**An Enterprise-Grade utility to automate the migration of SnapLogic pipelines to Databricks PySpark notebooks.**
 
-## Key Features
+This tool parses SnapLogic `.slp` or JSON exports, analyzes their logic, and generates robust, ready-to-deploy PySpark code. It utilizes AI (LLM) for intelligent logic translation while enforcing strict engineering guardrails.
 
-- **Batch Processing:** Automatically processes multiple pipeline files at once.
-- **Intelligent Validation:** Detects and segregates invalid or "junk" files.
-- **Security Guardrails:** Replaces hardcoded credentials with Databricks Secrets.
-- **Sanitization:** Strips GUI metadata to optimize processing.
-- **Enterprise Ready:** Adds error handling, logging, and validation checks to generated code.
+## ✨ Key Features
 
-## Directory Structure
+-   **Intelligent Conversion**: Uses AI to understand complex Snap logic (Mapper, Router, Union, etc.) and generate equivalent PySpark transformations.
+-   **Enterprise Architecture**:
+    -   **Vault Integration**: Automatically injects HashiCorp Vault client for secure credential management.
+    -   **Dynamic Configuration**: Supports environment-based configuration (Dev/QA/Prod) via JSON.
+    -   **Modular Design**: generated code is structured into functional blocks (e.g., `def File_Reader()`), improving maintainability and testability.
+-   **Security First**:
+    -   Secrets are never hardcoded.
+    -   Uses `pysmb` and `BytesIO` for secure, memory-safe file handling.
+-   **Native Notebook Support**: Outputs directly to `.ipynb` format for seamless import into Databricks Workspaces.
 
-- **`input_pipelines/`**: Drop your `.slp` or `.json` files here.
-- **`result/`**: Contains the generated Databricks PySpark notebooks (`.py`).
-- **`junk/`**: Invalid or corrupt files are automatically moved here.
-- **`process_uploads.py`**: The main script for batch processing.
-- **`convert_to_databricks.py`**: Core logic for LLM-based code generation.
-- **`sanitize_pipeline.py`**: Utility to clean SnapLogic metadata.
+## 🛠️ Installation
 
-## Usage
-
-### 1. Setup
-Ensure you have Python installed and the required dependencies:
-```bash
-pip install requests
-```
-*(Make sure you have a local LLM running, e.g., Ollama, if utilizing the LLM conversion features.)*
-
-### 2. Run Batch Processor
-1.  Place your SnapLogic export files in the `input_pipelines` folder.
-2.  Run the processor script:
+1.  **Clone the repository**:
     ```bash
-    python process_uploads.py
+    git clone https://github.com/your-org/snaplogic-to-databricks.git
+    cd snaplogic-to-databricks
     ```
 
-### 3. Review Output
-- **Success:** Check `result/` for your converted Python scripts.
-- **Failures:** Check console output for errors. Invalid files will be in `junk/`.
+2.  **Install Dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Generated Code Features
-The converted notebooks include:
-- **Global Error Handling:** `try/except` blocks around each Snap's logic.
-- **Validation:** Checks for empty DataFrames before write operations.
-- **Secrets Management:** `dbutils.secrets.get` allows for secure credential retrieval.
+3.  **Local LLM Setup**:
+    Ensure you have [Ollama](https://ollama.ai/) running locally with the `llama3.2` model (or configure the script to point to your enterprise LLM endpoint).
+    ```bash
+    ollama run llama3.2
+    ```
+
+## 🚀 Usage
+
+Run the converter on a single SnapLogic pipeline file:
+
+```bash
+python main.py <path_to_pipeline.json>
+```
+
+**Example:**
+```bash
+python main.py input_pipelines/load_to_staging.json
+```
+
+The tool will:
+1.  **Sanitize** the input JSON to remove GUI metadata.
+2.  **Analyze** the pipeline structure.
+3.  **Generate** a `.ipynb` file in the `result/` directory (e.g., `result/load_to_staging_databricks.ipynb`).
+
+## 🏗️ Project Structure
+
+-   `main.py`: Entry point for the converter.
+-   `convert_to_databricks.py`: Core logic for LLM interaction and code generation.
+-   `sanitize_pipeline.py`: Utility to clean input JSONs.
+-   `py_to_ipynb.py`: Helper to format Python code as Jupyter Notebooks.
+-   `input_pipelines/`: Place your source SnapLogic JSON files here.
+-   `result/`: Generated Databricks notebooks will appear here.
+
+## 🛡️ Guardrails & Patterns
+
+The converter enforces the **"LoadToStage"** architectural standard:
+-   **Functions over Scripts**: Every Snap becomes a discrete Python function.
+-   **Explicit I/O**: Inputs and Outputs are explicitly passed between steps.
+-   **Vault-first Auth**: All credentials are fetched via the Vault Client.
+
+---
+*Built for the Modern Data Platform.*

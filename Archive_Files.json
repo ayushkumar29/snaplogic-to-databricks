@@ -1,0 +1,1138 @@
+{
+  "class_fqid": "com-snaplogic-pipeline_9",
+  "snode_id": "69172a0c7b2827ed4f010beb",
+  "instance_id": "8b2abde0-18ff-4b6e-9d2e-6459d7c52a27",
+  "instance_version": 1,
+  "link_map": {
+    "link106": {
+      "dst_id": "f3f50f46-b974-42e8-b685-e53ceafdf7d5",
+      "dst_view_id": "input0",
+      "src_id": "b135d3ba-1bdf-4ca1-816c-12687f53b9ea",
+      "src_view_id": "output101",
+      "isGoto": false
+    },
+    "link108": {
+      "dst_id": "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2",
+      "dst_view_id": "input0",
+      "src_id": "91163a95-33df-4f0f-b3e4-c768ae9a2fcf",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link109": {
+      "dst_id": "91163a95-33df-4f0f-b3e4-c768ae9a2fcf",
+      "dst_view_id": "input101",
+      "src_id": "f3f50f46-b974-42e8-b685-e53ceafdf7d5",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link110": {
+      "dst_id": "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2",
+      "dst_view_id": "input1",
+      "src_id": "71ea2b73-bac5-4126-b2b3-7833e3a65543",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link111": {
+      "dst_id": "71ea2b73-bac5-4126-b2b3-7833e3a65543",
+      "dst_view_id": "input101",
+      "src_id": "f3f50f46-b974-42e8-b685-e53ceafdf7d5",
+      "src_view_id": "output1",
+      "isGoto": false
+    },
+    "link113": {
+      "dst_id": "640245b8-2621-4f6f-bb36-646a56a39fb5",
+      "dst_view_id": "input0",
+      "src_id": "8ce8409e-7b28-46f8-8cec-08dcd503345e",
+      "src_view_id": "output0",
+      "isGoto": false
+    },
+    "link114": {
+      "dst_id": "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4",
+      "dst_view_id": "input101",
+      "src_id": "640245b8-2621-4f6f-bb36-646a56a39fb5",
+      "src_view_id": "output101",
+      "isGoto": false
+    },
+    "link115": {
+      "dst_id": "b135d3ba-1bdf-4ca1-816c-12687f53b9ea",
+      "dst_view_id": "input102",
+      "src_id": "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4",
+      "src_view_id": "output102",
+      "isGoto": false
+    }
+  },
+  "link_serial": 116,
+  "property_map": {
+    "info": {
+      "notes": {
+        "value": null
+      },
+      "author": {
+        "value": "rchaudhari2@humana.com"
+      },
+      "purpose": {
+        "value": null
+      },
+      "pipeline_doc_uri": {
+        "value": null
+      },
+      "label": {
+        "value": "Archive_Files"
+      }
+    },
+    "error": {
+      "error_behavior": {
+        "value": "none"
+      }
+    },
+    "settings": {
+      "imports": {
+        "value": []
+      },
+      "error_param_table": {
+        "value": []
+      },
+      "error_pipeline": {
+        "expression": false,
+        "value": null
+      },
+      "param_table": {
+        "value": [
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "SourceFTPDirectory"
+            },
+            "value": {
+              "value": "$SourceFTPDirectory"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "DestinationFTPPath"
+            },
+            "value": {
+              "value": "$DestinationFTPPath"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "FTPUserName"
+            },
+            "value": {
+              "value": "$FTPUserName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "FileName"
+            },
+            "value": {
+              "value": "$FileName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "DestinationFTPServer"
+            },
+            "value": {
+              "value": "$DestinationFTPServer"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "FileId"
+            },
+            "value": {
+              "value": "$FileId"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "ProcessName"
+            },
+            "value": {
+              "value": "$ProcessName"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "EnvironmentValue"
+            },
+            "value": {
+              "value": "$EnvironmentValue"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "EmailInfo"
+            },
+            "value": {
+              "value": "$Emailinfo"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          }
+        ]
+      }
+    },
+    "input": {},
+    "output": {
+      "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2_output0": {
+        "label": {
+          "value": "Union - output0"
+        },
+        "view_type": {
+          "value": "document"
+        }
+      }
+    }
+  },
+  "render_map": {
+    "pan_x_num": 0,
+    "default_snaplex": "55d8b32b80b28214a4408ae9",
+    "scale_ratio": 1,
+    "detail_map": {
+      "f3f50f46-b974-42e8-b685-e53ceafdf7d5": {
+        "grid_x_int": 5,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "error": {}
+      },
+      "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2": {
+        "grid_x_int": 7,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {
+          "input1": {
+            "rot_int": 0,
+            "dx_int": 0,
+            "dy_int": 1
+          }
+        },
+        "error": {}
+      },
+      "b135d3ba-1bdf-4ca1-816c-12687f53b9ea": {
+        "grid_x_int": 4,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "91163a95-33df-4f0f-b3e4-c768ae9a2fcf": {
+        "grid_x_int": 6,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "71ea2b73-bac5-4126-b2b3-7833e3a65543": {
+        "grid_x_int": 6,
+        "grid_y_int": 2,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "8ce8409e-7b28-46f8-8cec-08dcd503345e": {
+        "grid_x_int": 1,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "snap catagory",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "640245b8-2621-4f6f-bb36-646a56a39fb5": {
+        "grid_x_int": 2,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "snap catagory",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4": {
+        "grid_x_int": 3,
+        "grid_y_int": 1,
+        "rot_int": 0,
+        "recommendation_id": null,
+        "source": "snap catagory",
+        "index": null,
+        "rot_tail_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      }
+    },
+    "pan_y_num": 0
+  },
+  "snap_map": {
+    "f3f50f46-b974-42e8-b685-e53ceafdf7d5": {
+      "class_fqid": "com-snaplogic-snaps-flow-router_2-main12833",
+      "class_id": "com-snaplogic-snaps-flow-router",
+      "class_version": 2,
+      "instance_fqid": "f3f50f46-b974-42e8-b685-e53ceafdf7d5_1",
+      "instance_id": "f3f50f46-b974-42e8-b685-e53ceafdf7d5",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Router"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "routes": {
+            "value": [
+              {
+                "expression": {
+                  "expression": true,
+                  "value": "$RequestCount>0"
+                },
+                "outputViewName": {
+                  "value": "output0"
+                }
+              },
+              {
+                "expression": {
+                  "expression": true,
+                  "value": "$RequestCount<=0"
+                },
+                "outputViewName": {
+                  "value": "output1"
+                }
+              }
+            ]
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "firstMatch": {
+            "value": false
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          },
+          "output1": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output1"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2": {
+      "class_fqid": "com-snaplogic-snaps-flow-union_2-main12833",
+      "class_id": "com-snaplogic-snaps-flow-union",
+      "class_version": 2,
+      "instance_fqid": "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2_1",
+      "instance_id": "eb74f7ba-5796-44d1-afc8-3ff75e8b10a2",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Union"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "input1": {
+            "label": {
+              "value": "input1"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "b135d3ba-1bdf-4ca1-816c-12687f53b9ea": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main12833",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "b135d3ba-1bdf-4ca1-816c-12687f53b9ea_1",
+      "instance_id": "b135d3ba-1bdf-4ca1-816c-12687f53b9ea",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Get Count"
+          }
+        },
+        "view_serial": 102,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')"
+          }
+        },
+        "input": {
+          "input102": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "maxRetryProp": {
+            "expression": false,
+            "value": 0
+          },
+          "passThrough": {
+            "value": true
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "sqlStatement": {
+            "expression": true,
+            "value": "'select requestCount as RequestCount from MessagingRequestFiles where FileId=' + _FileId\n"
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          },
+          "retryIntervalProp": {
+            "expression": false,
+            "value": 1
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output101": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "91163a95-33df-4f0f-b3e4-c768ae9a2fcf": {
+      "class_fqid": "com-snaplogic-snaps-email-emailsender_2-main12833",
+      "class_id": "com-snaplogic-snaps-email-emailsender",
+      "class_version": 2,
+      "instance_fqid": "91163a95-33df-4f0f-b3e4-c768ae9a2fcf_1",
+      "instance_id": "91163a95-33df-4f0f-b3e4-c768ae9a2fcf",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Email Sender"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'EmailAccount' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'EmailAccountQA' : 'EmailAccountPROD')",
+            "expression": true
+          }
+        },
+        "settings": {
+          "cc": {
+            "expression": false,
+            "value": null
+          },
+          "bcc": {
+            "expression": false,
+            "value": null
+          },
+          "body": {
+            "expression": true,
+            "value": " '<html> \n<head> \n     <title>Email Snap HTML Table</title> \n\n\n</head> \n<body> ' +\n'The Inspire Patient Takeaway EMME Export completed successfully.</br></br>' + \n' Server :: '+ _DestinationFTPServer +  '</br>Path :: ' + _DestinationFTPPath  +   '</br> FileName :: ' + _FileName  +'</br> RowCount :: ' + $RequestCount +\n'<br><p><b><font size=3>Executed On ::  </b>' +  Date.now().toLocaleDateTimeString({timeZone:\"EST\", \"format\":\"YYYY-MM-dd hh:mm:ss aa\"}) + '</font></p> <p><b><font size=3>Executed By ::  </b>'+pipe.user + ' </font></br></br>\n            <p><font size=3>Archived Files Path::  '+  _SourceFTPDirectory.replaceAll (\"/\",\"\\\\\")+ Date.now().toLocaleDateTimeString({'format':'yyyyMM'})+'</font></p> \n <font size=3><b>Snaplogic Pipeline Name :: </b>' + _ProcessName + ' </font></br></br>'"
+          },
+          "retries": {
+            "value": 3
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "from": {
+            "expression": true,
+            "value": "'Inspire'+_EnvironmentValue+'@humana.com'"
+          },
+          "subject": {
+            "expression": false,
+            "value": "Inspire Patient Takeaway EMME Export Completed Successfully"
+          },
+          "attachments": {
+            "value": []
+          },
+          "passThrough": {
+            "value": false
+          },
+          "emailType": {
+            "value": "HTML text"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "batchSize": {
+            "value": 100
+          },
+          "to": {
+            "expression": true,
+            "value": "_EmailInfo.replaceAll(';',',')"
+          },
+          "tableDataPath": {
+            "value": null
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "71ea2b73-bac5-4126-b2b3-7833e3a65543": {
+      "class_fqid": "com-snaplogic-snaps-email-emailsender_2-main12833",
+      "class_id": "com-snaplogic-snaps-email-emailsender",
+      "class_version": 2,
+      "instance_fqid": "71ea2b73-bac5-4126-b2b3-7833e3a65543_1",
+      "instance_id": "71ea2b73-bac5-4126-b2b3-7833e3a65543",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Email Sender"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'EmailAccount' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'EmailAccountQA' : 'EmailAccountPROD')",
+            "expression": true
+          }
+        },
+        "settings": {
+          "cc": {
+            "expression": false,
+            "value": null
+          },
+          "bcc": {
+            "expression": false,
+            "value": null
+          },
+          "body": {
+            "expression": true,
+            "value": " '<html> \n<head> \n     <title>Email Snap HTML Table</title> \n\n\n</head> \n<body> ' +\n'No Patient Takeaways were sent to EMME due to validation errors. ePharmacy IT Prod Support <epharmITSupport@humana.com> has been notified and is investigating the issue now.' +\n'<br><p><b><font size=3>Executed On ::  </b>' +  Date.now().toLocaleDateTimeString({timeZone:\"EST\", \"format\":\"YYYY-MM-dd hh:mm:ss aa\"}) + '</font></p> <p><b><font size=3>Executed By ::  </b>'+pipe.user + ' </font></br></br>\n            <p><font size=3>Archived Files Path::  '+ _SourceFTPDirectory.replaceAll (\"/\",\"\\\\\")+ Date.now().toLocaleDateTimeString({'format':'yyyyMM'})+'</font></p> \n <font size=3><b>Snaplogic Pipeline Name :: </b>' + _ProcessName + ' </font></br></br>'"
+          },
+          "retries": {
+            "value": 3
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "from": {
+            "expression": true,
+            "value": "'Inspire'+_EnvironmentValue+'@humana.com'"
+          },
+          "subject": {
+            "expression": false,
+            "value": "Inspire Patient Takeaway EMME Export Warning"
+          },
+          "attachments": {
+            "value": []
+          },
+          "passThrough": {
+            "value": false
+          },
+          "emailType": {
+            "value": "HTML text"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "batchSize": {
+            "value": 100
+          },
+          "to": {
+            "expression": true,
+            "value": "_EmailInfo.replaceAll(';',',')"
+          },
+          "tableDataPath": {
+            "value": null
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "8ce8409e-7b28-46f8-8cec-08dcd503345e": {
+      "class_fqid": "com-snaplogic-snaps-binary-simpleread_1-438patches28197",
+      "class_id": "com-snaplogic-snaps-binary-simpleread",
+      "class_version": 1,
+      "instance_fqid": "8ce8409e-7b28-46f8-8cec-08dcd503345e_1",
+      "instance_id": "8ce8409e-7b28-46f8-8cec-08dcd503345e",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "File Reader"
+          },
+          "notes": {}
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "preventURLEncoding": {
+            "value": false
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "executeDuringPreview": {
+            "value": true
+          },
+          "filePath": {
+            "value": "'smb:' + _SourceFTPDirectory.replace('Archive','') +_FileNameTemp",
+            "expression": true
+          },
+          "enableStaging": {
+            "value": false
+          },
+          "advancedProperties": {
+            "value": []
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'hummft_PBM_Inspr_NPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'hummft_PBM_Inspr_NPE' : 'hummft_PBM_Inspr_PROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 100,
+        "input": {}
+      },
+      "class_build_tag": "438patches28197"
+    },
+    "640245b8-2621-4f6f-bb36-646a56a39fb5": {
+      "class_fqid": "com-snaplogic-snaps-binary-write_3-438patches28197",
+      "class_id": "com-snaplogic-snaps-binary-write",
+      "class_version": 3,
+      "instance_fqid": "640245b8-2621-4f6f-bb36-646a56a39fb5_1",
+      "instance_id": "640245b8-2621-4f6f-bb36-646a56a39fb5",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "File Writer"
+          },
+          "notes": {}
+        },
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "flushIntervalKb": {
+            "value": -1
+          },
+          "UserPermissionsKey": {
+            "value": []
+          },
+          "retries": {
+            "value": 0,
+            "expression": false
+          },
+          "cannedAcls": {
+            "value": "None"
+          },
+          "filename": {
+            "value": "'smb:' + _SourceFTPDirectory +Date.now().toLocaleDateTimeString({'format':'yyyyMM'})+'/'+_FileName",
+            "expression": true
+          },
+          "execution_mode": {
+            "value": "Execute only"
+          },
+          "preventURLEncoding": {
+            "value": true
+          },
+          "writeEmptyFile": {
+            "value": true
+          },
+          "writeHeader": {
+            "value": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "createDir": {
+            "value": false
+          },
+          "fileAction": {
+            "value": "OVERWRITE"
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "validate": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'hummft_PBM_Inspr_NPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'hummft_PBM_Inspr_NPE' : 'hummft_PBM_Inspr_PROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 101,
+        "output": {
+          "output101": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "438patches28197"
+    },
+    "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4": {
+      "class_fqid": "com-snaplogic-snaps-binary-delete_1-438patches28197",
+      "class_id": "com-snaplogic-snaps-binary-delete",
+      "class_version": 1,
+      "instance_fqid": "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4_1",
+      "instance_id": "4cbb6a6b-2a19-4c98-9f62-2c3ae153d0f4",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "File Delete"
+          },
+          "notes": {}
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "deleteAction": {
+            "value": "ERROR if file not found"
+          },
+          "retries": {
+            "value": 2,
+            "expression": false
+          },
+          "retryInterval": {
+            "value": 1,
+            "expression": false
+          },
+          "filePath": {
+            "value": "'smb:' + _SourceFTPDirectory.replace('Archive','') +_FileNameTemp",
+            "expression": true
+          },
+          "validate": {
+            "value": false
+          },
+          "advancedProperties": {
+            "value": []
+          }
+        },
+        "account": {
+          "account_ref": {
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'hummft_PBM_Inspr_NPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'hummft_PBM_Inspr_NPE' : 'hummft_PBM_Inspr_PROD')",
+            "expression": true
+          }
+        },
+        "view_serial": 102,
+        "input": {
+          "input101": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "output": {
+          "output102": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "438patches28197"
+    }
+  },
+  "path_id": "/HumanaQA/Pharmacy_Benefit_Management/Inspire_PatientTakeawayEmmeExport",
+  "path_snode": "64d6214cbdf14e36d13ef6e9"
+}

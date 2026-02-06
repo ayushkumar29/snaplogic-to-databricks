@@ -4,6 +4,9 @@ import shutil
 import time
 from sanitize_pipeline import sanitize_snaplogic_pipeline
 from convert_to_databricks import convert_to_databricks
+from py_to_ipynb import py_to_ipynb
+from ipynb_to_html import ipynb_to_html
+import webbrowser
 
 def process_pipeline(file_obj, model_name):
     """
@@ -56,31 +59,72 @@ def process_pipeline(file_obj, model_name):
     except Exception as e:
         return f"Error reading output file: {str(e)}", None
 
-    return generated_code, final_output_path
+    # Step 3: Convert to Notebook and HTML
+    ipynb_path = final_output_path.replace(".py", ".ipynb")
+    try:
+        nb_dict = py_to_ipynb(generated_code, ipynb_path)
+        status_log.append("Notebook generated.")
+        
+        html_view = ipynb_to_html(nb_dict)
+        
+        # Save HTML to file for external viewing
+        html_filename = f"{base_name}_notebook.html"
+        html_path = os.path.join(output_dir, html_filename)
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(html_view)
+            
+        status_log.append(f"HTML view saved to {html_path}")
+        
+        # Open in system browser
+        try:
+            webbrowser.open('file://' + os.path.abspath(html_path))
+            status_log.append("Opened in system browser.")
+        except Exception as e:
+            status_log.append(f"Could not open browser: {e}")
+
+    except Exception as e:
+        status_log.append(f"Error generating notebook: {e}")
+        return f"Error: {e}", None, None, None
+
+    return generated_code, final_output_path, ipynb_path, html_view
 
 # UI Layout
-with gr.Blocks(title="SnapLogic to Databricks Converter") as demo:
+# Force dark text for notebook container globally
+custom_css = """
+.notebook-container * {
+    color: #333 !important;
+}
+"""
+
+with gr.Blocks(title="SnapLogic to Databricks Converter", css=custom_css) as demo:
     gr.Markdown("# 🔄 SnapLogic to Databricks Converter")
     gr.Markdown("Upload your `.slp` pipeline file to sanitize it and generate a PySpark notebook.")
     
-    with gr.Row():
-        with gr.Column():
-            file_input = gr.File(label="Upload SnapLogic Pipeline (.slp)", file_types=[".slp", ".json"])
-            model_input = gr.Dropdown(
-                choices=["llama3.2", "gpt-4", "gemini-1.5-pro"], 
-                value="llama3.2", 
-                label="LLM Model (Currently uses generic local LLM logic)"
-            )
-            convert_btn = gr.Button("Convert Pipeline", variant="primary")
+    with gr.Tabs():
+        with gr.TabItem("Converter"):
+            with gr.Row():
+                with gr.Column():
+                    file_input = gr.File(label="Upload SnapLogic Pipeline (.slp)", file_types=[".slp", ".json"])
+                    model_input = gr.Dropdown(
+                        choices=["llama3.2", "gpt-4", "gemini-1.5-pro"], 
+                        value="llama3.2", 
+                        label="LLM Model (Currently uses generic local LLM logic)"
+                    )
+                    convert_btn = gr.Button("Convert Pipeline", variant="primary")
+                
+                with gr.Column():
+                    code_output = gr.Code(label="Generated PySpark Code", language="python", lines=20)
+                    with gr.Row():
+                        file_output = gr.File(label="Download Script (.py)")
+                        ipynb_output = gr.File(label="Download Notebook (.ipynb)")
         
-        with gr.Column():
-            code_output = gr.Code(label="Generated PySpark Code", language="python", lines=20)
-            file_output = gr.File(label="Download Notebook (.py)")
+        with gr.TabItem("Notebook Viewer"):
+             html_output = gr.HTML(label="Notebook Content")
 
     convert_btn.click(
         fn=process_pipeline,
         inputs=[file_input, model_input],
-        outputs=[code_output, file_output]
+        outputs=[code_output, file_output, ipynb_output, html_output]
     )
 
 if __name__ == "__main__":

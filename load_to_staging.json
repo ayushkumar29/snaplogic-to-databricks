@@ -1,0 +1,812 @@
+{
+  "class_fqid": "com-snaplogic-pipeline_9",
+  "snode_id": "68da84e6c0eb236366e8a403",
+  "instance_id": "950b271e-ccae-48a9-92df-a0666dc716ee",
+  "instance_version": 1,
+  "link_map": {
+    "link109": {
+      "src_view_id": "output102",
+      "dst_view_id": "input101",
+      "src_id": "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e",
+      "dst_id": "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc",
+      "isGoto": false
+    },
+    "link106": {
+      "src_view_id": "output1",
+      "dst_view_id": "input0",
+      "src_id": "9613241a-4b72-47d7-a063-7e9a21d7c2e5",
+      "dst_id": "92202f37-6a0d-4065-a236-b5bc17589618",
+      "isGoto": false
+    },
+    "link107": {
+      "src_view_id": "output0",
+      "dst_view_id": "input0",
+      "src_id": "92202f37-6a0d-4065-a236-b5bc17589618",
+      "dst_id": "82bccd84-f6e1-42b9-9b9b-8598bbb4c650",
+      "isGoto": false
+    },
+    "link104": {
+      "src_view_id": "output0",
+      "dst_view_id": "input0",
+      "src_id": "34ed5501-143c-43f8-9b2f-a02ed991eb59",
+      "dst_id": "9613241a-4b72-47d7-a063-7e9a21d7c2e5",
+      "isGoto": false
+    },
+    "link105": {
+      "src_view_id": "output0",
+      "dst_view_id": "inputRows",
+      "src_id": "9613241a-4b72-47d7-a063-7e9a21d7c2e5",
+      "dst_id": "b1f8af45-a7e1-426f-864d-517c683d221a",
+      "isGoto": false
+    },
+    "link101": {
+      "src_view_id": "output0",
+      "dst_view_id": "input0",
+      "src_id": "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc",
+      "dst_id": "34ed5501-143c-43f8-9b2f-a02ed991eb59",
+      "isGoto": false
+    }
+  },
+  "link_serial": 110,
+  "property_map": {
+    "info": {
+      "notes": {
+        "value": null
+      },
+      "label": {
+        "value": "load_to_staging"
+      },
+      "purpose": {
+        "value": null
+      },
+      "pipeline_doc_uri": {
+        "value": null
+      },
+      "author": {
+        "value": "rchaudhari2@humana.com"
+      }
+    },
+    "error": {
+      "error_behavior": {
+        "value": "none"
+      }
+    },
+    "settings": {
+      "imports": {
+        "value": []
+      },
+      "error_param_table": {
+        "value": []
+      },
+      "param_table": {
+        "value": [
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "SourceFTPDirectory"
+            },
+            "value": {
+              "value": "$SourceFTPDirectory"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          },
+          {
+            "capture": {
+              "value": false
+            },
+            "key": {
+              "value": "filename"
+            },
+            "value": {
+              "value": "$filename"
+            },
+            "required": {
+              "value": false
+            },
+            "data_type": {
+              "value": "string"
+            },
+            "description": {
+              "value": null
+            }
+          }
+        ]
+      },
+      "error_pipeline": {
+        "expression": false,
+        "value": null
+      }
+    },
+    "input": {
+      "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e_input101": {
+        "view_type": {
+          "value": "document"
+        },
+        "label": {
+          "value": "Truncate Staging file - input0"
+        }
+      }
+    },
+    "output": {
+      "82bccd84-f6e1-42b9-9b9b-8598bbb4c650_output0": {
+        "view_type": {
+          "value": "document"
+        },
+        "label": {
+          "value": "Tail - output0"
+        }
+      }
+    }
+  },
+  "render_map": {
+    "pan_x_num": 0,
+    "default_snaplex": "55d8b32b80b28214a4408ae9",
+    "scale_ratio": 1,
+    "detail_map": {
+      "82bccd84-f6e1-42b9-9b9b-8598bbb4c650": {
+        "grid_x_int": 7,
+        "index": null,
+        "recommendation_id": null,
+        "source": "snap catagory",
+        "grid_y_int": 2,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "rot_int": 90,
+        "error": {}
+      },
+      "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc": {
+        "grid_x_int": 3,
+        "index": null,
+        "recommendation_id": null,
+        "source": "",
+        "grid_y_int": 1,
+        "rot_tail_int": 0,
+        "rot_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "92202f37-6a0d-4065-a236-b5bc17589618": {
+        "grid_x_int": 6,
+        "index": null,
+        "recommendation_id": null,
+        "source": "",
+        "grid_y_int": 2,
+        "rot_tail_int": 0,
+        "output": {},
+        "input": {},
+        "rot_int": 0,
+        "view": "output",
+        "error": {}
+      },
+      "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e": {
+        "grid_x_int": 2,
+        "index": null,
+        "recommendation_id": null,
+        "source": "",
+        "grid_y_int": 1,
+        "rot_tail_int": 270,
+        "rot_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "34ed5501-143c-43f8-9b2f-a02ed991eb59": {
+        "grid_x_int": 4,
+        "index": null,
+        "recommendation_id": null,
+        "source": "",
+        "grid_y_int": 1,
+        "rot_tail_int": 0,
+        "rot_int": 0,
+        "input": {},
+        "output": {},
+        "error": {}
+      },
+      "b1f8af45-a7e1-426f-864d-517c683d221a": {
+        "grid_x_int": 6,
+        "index": null,
+        "recommendation_id": null,
+        "source": "",
+        "grid_y_int": 1,
+        "rot_tail_int": 0,
+        "output": {},
+        "rot_int": 0,
+        "input": {},
+        "error": {}
+      },
+      "9613241a-4b72-47d7-a063-7e9a21d7c2e5": {
+        "grid_x_int": 5,
+        "index": null,
+        "recommendation_id": null,
+        "source": "snap catagory",
+        "grid_y_int": 1,
+        "rot_tail_int": 0,
+        "output": {
+          "output1": {
+            "dx_int": 0,
+            "rot_int": 0,
+            "dy_int": 1
+          }
+        },
+        "input": {},
+        "rot_int": 0,
+        "error": {}
+      }
+    },
+    "pan_y_num": 0
+  },
+  "snap_map": {
+    "82bccd84-f6e1-42b9-9b9b-8598bbb4c650": {
+      "class_fqid": "com-snaplogic-snaps-flow-tail_1-main12833",
+      "class_id": "com-snaplogic-snaps-flow-tail",
+      "class_version": 1,
+      "instance_fqid": "82bccd84-f6e1-42b9-9b9b-8598bbb4c650_1",
+      "instance_id": "82bccd84-f6e1-42b9-9b9b-8598bbb4c650",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Tail"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "numOfDocs": {
+            "value": 1
+          },
+          "offset": {
+            "value": 0
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc": {
+      "class_fqid": "com-snaplogic-snaps-binary-simpleread_1-main12833",
+      "class_id": "com-snaplogic-snaps-binary-simpleread",
+      "class_version": 1,
+      "instance_fqid": "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc_1",
+      "instance_id": "b61a9bfe-44f4-4357-b654-a9f0b9c03cfc",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "File Reader"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'hummft_PBM_Inspr_NPE' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'hummft_PBM_Inspr_NPE' : 'hummft_PBM_Inspr_PROD')"
+          }
+        },
+        "settings": {
+          "retryInterval": {
+            "expression": false,
+            "value": 1
+          },
+          "retries": {
+            "expression": false,
+            "value": 0
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "filePath": {
+            "expression": true,
+            "value": "'smb:'+ _SourceFTPDirectory +_filename"
+          },
+          "enableStaging": {
+            "value": false
+          },
+          "executeDuringPreview": {
+            "value": true
+          },
+          "advancedProperties": {
+            "value": []
+          },
+          "preventURLEncoding": {
+            "value": false
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "input": {
+          "input101": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "92202f37-6a0d-4065-a236-b5bc17589618": {
+      "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-main12989",
+      "class_id": "com-snaplogic-snaps-transform-datatransform",
+      "class_version": 4,
+      "instance_fqid": "92202f37-6a0d-4065-a236-b5bc17589618_1",
+      "instance_id": "92202f37-6a0d-4065-a236-b5bc17589618",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Mapper1"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "nullSafeAccess": {
+            "value": false
+          },
+          "passThrough": {
+            "value": false
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "transformations": {
+            "value": {
+              "mappingTable": {
+                "value": [
+                  {
+                    "targetPath": {
+                      "value": "$rowCount"
+                    },
+                    "expression": {
+                      "expression": true,
+                      "value": "snap.in.totalCount"
+                    }
+                  }
+                ]
+              },
+              "mappingRoot": {
+                "value": "$"
+              }
+            }
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-execute_1-main12833",
+      "class_id": "com-snaplogic-snaps-sqlserver-execute",
+      "class_version": 1,
+      "instance_fqid": "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e_1",
+      "instance_id": "d80c2ac6-4806-45cb-ab56-3c07ae7a2f1e",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "Truncate Staging file"
+          }
+        },
+        "view_serial": 102,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')"
+          }
+        },
+        "input": {
+          "input101": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "autoCommit": {
+            "value": "Use account setting"
+          },
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "maxRetryProp": {
+            "expression": false,
+            "value": 0
+          },
+          "passThrough": {
+            "value": true
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "sqlStatement": {
+            "expression": false,
+            "value": "TRUNCATE TABLE dbo.FileRecordStaging"
+          },
+          "ignoreEmptyResult": {
+            "value": false
+          },
+          "retryIntervalProp": {
+            "expression": false,
+            "value": 1
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output102": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    },
+    "34ed5501-143c-43f8-9b2f-a02ed991eb59": {
+      "class_fqid": "com-snaplogic-snaps-transform-csvparser_3-main12989",
+      "class_id": "com-snaplogic-snaps-transform-csvparser",
+      "class_version": 3,
+      "instance_fqid": "34ed5501-143c-43f8-9b2f-a02ed991eb59_1",
+      "instance_id": "34ed5501-143c-43f8-9b2f-a02ed991eb59",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": "CSV Parser"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "view_type": {
+              "value": "binary"
+            },
+            "label": {
+              "value": "input0"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "escapeChar": {
+            "expression": false,
+            "value": "\\"
+          },
+          "containsHeader": {
+            "value": false
+          },
+          "quoteCharacter": {
+            "expression": false,
+            "value": "\""
+          },
+          "ignoreEmptyData": {
+            "value": false
+          },
+          "charset": {
+            "value": "Auto BOM detect"
+          },
+          "skipLines": {
+            "value": 0
+          },
+          "delimiter": {
+            "expression": false,
+            "value": "^"
+          },
+          "errorPolicy": {
+            "value": "Both"
+          },
+          "columnList": {
+            "value": [
+              {
+                "columns": {
+                  "value": "FileRecord"
+                }
+              }
+            ]
+          },
+          "validateHeaders": {
+            "value": false
+          },
+          "preserveSurroundingSpaces": {
+            "expression": false,
+            "value": false
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "output0"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12989"
+    },
+    "b1f8af45-a7e1-426f-864d-517c683d221a": {
+      "class_fqid": "com-snaplogic-snaps-sqlserver-insert_1-main12833",
+      "class_id": "com-snaplogic-snaps-sqlserver-insert",
+      "class_version": 1,
+      "instance_fqid": "b1f8af45-a7e1-426f-864d-517c683d221a_1",
+      "instance_id": "b1f8af45-a7e1-426f-864d-517c683d221a",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "notes": {},
+          "label": {
+            "value": " Insert to FileRecordStaging"
+          }
+        },
+        "view_serial": 101,
+        "account": {
+          "account_ref": {
+            "expression": true,
+            "value": "pipe.plexPath.split('/')[1]=='HumanaDev' ? 'RXINSPIRETEST' : (pipe.plexPath.split('/')[1]=='HumanaQA' ? 'RXINSPIREQA' : 'RXINSPIREPROD')"
+          }
+        },
+        "input": {
+          "inputRows": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "rows"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          },
+          "maxRetryProp": {
+            "expression": false,
+            "value": 0
+          },
+          "tableName": {
+            "expression": false,
+            "value": "\"dbo\".\"FileRecordStaging\""
+          },
+          "preserveCaseSensistiveness": {
+            "value": false
+          },
+          "executable_during_suggest": {
+            "value": false
+          },
+          "enableIdentityInsert": {
+            "value": false
+          },
+          "createTable": {
+            "value": false
+          },
+          "schemaName": {
+            "expression": false,
+            "value": "\"dbo\""
+          },
+          "retryIntervalProp": {
+            "expression": false,
+            "value": 1
+          }
+        },
+        "error": {
+          "error0": {
+            "view_type": {
+              "value": "document"
+            },
+            "label": {
+              "value": "error0"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {}
+      },
+      "class_build_tag": "main12833"
+    },
+    "9613241a-4b72-47d7-a063-7e9a21d7c2e5": {
+      "class_fqid": "com-snaplogic-snaps-flow-copy_1-main12833",
+      "class_id": "com-snaplogic-snaps-flow-copy",
+      "class_version": 1,
+      "instance_fqid": "9613241a-4b72-47d7-a063-7e9a21d7c2e5_1",
+      "instance_id": "9613241a-4b72-47d7-a063-7e9a21d7c2e5",
+      "instance_version": 1,
+      "property_map": {
+        "info": {
+          "label": {
+            "value": "Copy"
+          }
+        },
+        "view_serial": 100,
+        "input": {
+          "input0": {
+            "label": {
+              "value": "input0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        },
+        "settings": {
+          "execution_mode": {
+            "value": "Validate & Execute"
+          }
+        },
+        "error": {
+          "error0": {
+            "label": {
+              "value": "error0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "error_behavior": {
+            "value": "fail"
+          }
+        },
+        "output": {
+          "output0": {
+            "label": {
+              "value": "output0"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          },
+          "output1": {
+            "label": {
+              "value": "output1"
+            },
+            "view_type": {
+              "value": "document"
+            }
+          }
+        }
+      },
+      "class_build_tag": "main12833"
+    }
+  },
+  "path_id": "/HumanaQA/Pharmacy_Benefit_Management/Inspire_EligibilityDataLoadProcess",
+  "path_snode": "626933ad5739b55e47e4a0f7"
+}
